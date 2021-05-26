@@ -1,0 +1,749 @@
+Timestamp;Age;Gender;State;family_history;treatment;work_interfere;mental_health_consequence;phys_health_consequence;coworkers;supervisor
+2014-08-27 11:29:31;37;Female;IL;No;Yes;Often;No;No;Some of them;Yes
+2014-08-27 11:29:37;44;M;IN;No;No;Rarely;Maybe;No;No;No
+2014-08-27 11:30:22;31;Male;TX;No;No;Never;No;No;Some of them;Yes
+2014-08-27 11:31:22;33;Male;TN;Yes;No;Sometimes;No;No;Yes;Yes
+2014-08-27 11:31:50;35;Female;MI;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;No
+2014-08-27 11:32:39;42;Female;IL;Yes;Yes;Sometimes;Maybe;No;Yes;Yes
+2014-08-27 11:32:44;31;Male;OH;No;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 11:33:23;42;female;CA;Yes;Yes;Sometimes;Yes;Yes;Yes;Yes
+2014-08-27 11:33:26;36;Male;CT;Yes;No;Never;No;No;Yes;Yes
+2014-08-27 11:34:00;29;female;IL;Yes;Yes;Rarely;No;No;Yes;Some of them
+2014-08-27 11:34:37;32;Male;TN;No;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 11:34:53;46;male;MD;Yes;No;Sometimes;No;No;Yes;Yes
+2014-08-27 11:35:12;29;Male;NY;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 11:35:24;31;male;NC;No;No;Never;No;No;Some of them;Some of them
+2014-08-27 11:35:48;46;Male;MA;No;Yes;Often;Maybe;No;Some of them;Yes
+2014-08-27 11:36:24;41;Male;IA;No;Yes;Never;Maybe;No;No;No
+2014-08-27 11:36:48;33;male;CA;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 11:37:08;35;male;TN;Yes;Yes;Sometimes;Yes;No;Some of them;Yes
+2014-08-27 11:37:23;33;male;TN;No;No;NA;Maybe;Maybe;Some of them;No
+2014-08-27 11:37:59;35;Female;CA;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 11:38:12;34;male;OH;No;Yes;Sometimes;No;No;Some of them;No
+2014-08-27 11:38:55;31;Male;PA;Yes;No;Rarely;Yes;No;No;No
+2014-08-27 11:39:36;42;Male;WA;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 11:40:51;40;female;WI;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 11:41:17;27;Male;NY;No;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 11:42:08;50;M;IN;No;No;NA;No;No;Some of them;Yes
+2014-08-27 11:42:15;35;M;TX;No;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 11:42:31;35;Male;MI;No;No;NA;Yes;Yes;Some of them;No
+2014-08-27 11:43:22;30;Male;IN;No;Yes;Sometimes;No;No;No;No
+2014-08-27 11:43:36;38;Female;TX;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 11:43:48;34;Male;TN;No;No;NA;No;No;Yes;Yes
+2014-08-27 11:44:43;30;male;IL;Yes;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 11:44:55;22;M;TX;Yes;Yes;Often;Maybe;No;No;No
+2014-08-27 11:45:32;33;Male;UT;No;No;NA;No;No;Some of them;Yes
+2014-08-27 11:45:33;31;M;NA;No;No;NA;Maybe;Maybe;Some of them;Some of them
+2014-08-27 11:45:51;32;Male;TN;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-27 11:46:49;27;Male;NY;Yes;Yes;Rarely;Maybe;No;No;No
+2014-08-27 11:46:55;32;m;TN;Yes;No;NA;No;No;Yes;Yes
+2014-08-27 11:47:10;24;Male;NY;Yes;Yes;Sometimes;No;Maybe;Some of them;Yes
+2014-08-27 11:47:33;26;Male;TN;No;No;NA;No;No;Some of them;Yes
+2014-08-27 11:48:57;44;Male;IA;Yes;Yes;Sometimes;Yes;Maybe;Some of them;No
+2014-08-27 11:51:07;40;Male;CA;Yes;No;Sometimes;Yes;Maybe;Some of them;No
+2014-08-27 11:52:07;36;M;TX;No;No;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 11:52:41;31;Female;NM;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 11:52:44;34;Male;NY;No;No;Rarely;Maybe;No;Some of them;No
+2014-08-27 11:54:27;23;female;MA;No;No;Rarely;Maybe;No;Yes;Yes
+2014-08-27 11:56:29;33;Male;CA;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-27 11:57:33;25;Male;WA;No;No;NA;No;No;Yes;Yes
+2014-08-27 11:57:54;31;Male;WA;Yes;No;Sometimes;No;No;Yes;Yes
+2014-08-27 11:59:31;32;Male;UT;Yes;Yes;Sometimes;Yes;No;Some of them;No
+2014-08-27 12:01:50;38;Male;NY;Yes;No;Sometimes;No;No;Yes;Some of them
+2014-08-27 12:03:30;27;Female;NY;No;Yes;Often;Maybe;Maybe;Some of them;Yes
+2014-08-27 12:05:13;33;Male;CA;Yes;No;Never;Yes;No;No;No
+2014-08-27 12:05:37;31;Male;TX;No;No;NA;No;No;Some of them;Yes
+2014-08-27 12:10:43;34;female;OR;Yes;Yes;Rarely;Yes;Maybe;Some of them;Some of them
+2014-08-27 12:11:00;29;F;FL;No;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 12:11:07;32;M;IL;No;No;NA;No;No;Some of them;Some of them
+2014-08-27 12:12:47;31;Male;NY;No;No;Never;No;No;Some of them;Yes
+2014-08-27 12:13:30;40;male;TX;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 12:14:13;34;Male;OH;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 12:15:30;29;male;MN;No;No;Never;No;No;Yes;Yes
+2014-08-27 12:16:21;24;Male;MO;Yes;No;Rarely;Maybe;Maybe;Some of them;No
+2014-08-27 12:18:02;33;Male;AZ;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 12:18:04;30;M;IN;No;Yes;Often;No;No;Yes;Yes
+2014-08-27 12:18:38;44;Female;MA;No;No;Never;Maybe;Maybe;No;Some of them
+2014-08-27 12:19:52;25;Male;NY;Yes;No;NA;No;No;Some of them;Yes
+2014-08-27 12:20:10;33;Male;WI;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 12:22:55;29;Male;NY;No;No;Never;No;No;Some of them;Yes
+2014-08-27 12:23:48;35;Male;MO;Yes;No;Rarely;No;No;Some of them;Yes
+2014-08-27 12:23:59;35;M;OR;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 12:28:12;34;m;TN;Yes;No;Never;Maybe;No;No;No
+2014-08-27 12:28:16;32;Male;WA;No;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 12:29:25;22;Male;NY;No;Yes;Sometimes;Yes;No;No;No
+2014-08-27 12:31:02;28;Male;CA;No;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 12:31:03;45;male;MO;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 12:31:14;32;Male;NY;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-27 12:31:28;28;male;TX;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 12:31:43;18;Male;CT;No;Yes;Rarely;No;No;Some of them;No
+2014-08-27 12:32:24;35;Male;CO;No;No;NA;No;No;Some of them;Yes
+2014-08-27 12:32:59;29;Male;GA;No;No;Never;Yes;Yes;No;No
+2014-08-27 12:33:00;25;Male;DC;No;No;NA;No;No;Some of them;Yes
+2014-08-27 12:33:23;33;Male;MN;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 12:33:36;36;Male;WA;No;No;Often;Maybe;No;No;No
+2014-08-27 12:34:11;27;Male;WA;Yes;No;Never;Yes;No;Some of them;No
+2014-08-27 12:34:35;32;M;OR;No;Yes;Rarely;Yes;No;No;Yes
+2014-08-27 12:34:57;33;Male;IL;Yes;Yes;Sometimes;Maybe;No;Yes;Some of them
+2014-08-27 12:35:23;32;male;CA;No;No;Rarely;Maybe;No;Yes;Some of them
+2014-08-27 12:36:03;27;Male;NE;No;No;Never;No;No;Yes;Yes
+2014-08-27 12:37:31;39;Male;IA;No;Yes;Often;No;No;Yes;Yes
+2014-08-27 12:37:50;29;Female;MD;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 12:38:11;38;Male;OR;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 12:38:25;35;M;TX;No;No;Never;Yes;No;Some of them;No
+2014-08-27 12:39:14;29;Male;MN;No;No;NA;No;No;Some of them;Yes
+2014-08-27 12:39:18;30;Female;PA;Yes;No;NA;Maybe;Maybe;Some of them;Some of them
+2014-08-27 12:39:21;37;Male;IN;Yes;Yes;Rarely;Maybe;Maybe;Some of them;Yes
+2014-08-27 12:39:57;23;Male;WV;No;No;Sometimes;Yes;Yes;No;No
+2014-08-27 12:40:06;29;Female;MI;No;No;NA;Maybe;No;No;Some of them
+2014-08-27 12:40:53;32;male;CA;Yes;No;Never;No;No;Some of them;Some of them
+2014-08-27 12:41:20;36;Male;IL;No;No;Never;No;No;Some of them;Some of them
+2014-08-27 12:42:24;25;Male;IL;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 12:42:52;27;Male;CA;Yes;Yes;Sometimes;No;No;No;Some of them
+2014-08-27 12:43:28;26;male;OK;No;No;Often;Yes;Maybe;Some of them;Yes
+2014-08-27 12:43:28;27;male;UT;No;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 12:43:40;25;Male;IL;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 12:44:51;25;F;NY;Yes;Yes;Sometimes;Yes;Yes;Some of them;Some of them
+2014-08-27 12:44:51;31;M;CA;No;No;Never;No;No;Some of them;Some of them
+2014-08-27 12:45:44;26;male;MA;Yes;No;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 12:46:03;33;F;WA;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 12:48:06;34;Male;MN;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-27 12:48:29;42;male;CA;No;No;NA;Maybe;No;Yes;Yes
+2014-08-27 12:49:27;23;Female;NC;No;No;NA;Maybe;Maybe;Some of them;Yes
+2014-08-27 12:49:39;31;male;MO;No;No;Never;Maybe;No;No;Some of them
+2014-08-27 12:50:57;32;Female;MA;No;Yes;Often;No;No;Yes;Yes
+2014-08-27 12:51:25;45;F;CA;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 12:51:36;33;Male;TX;No;No;NA;No;No;Yes;Yes
+2014-08-27 12:51:55;45;M;CA;No;Yes;Sometimes;Yes;Yes;Some of them;Some of them
+2014-08-27 12:52:08;43;Male;WA;Yes;Yes;Often;Yes;Maybe;No;No
+2014-08-27 12:52:46;37;male;MA;No;No;NA;Yes;No;Some of them;No
+2014-08-27 12:53:13;35;Female;CA;Yes;Yes;Never;Maybe;No;No;No
+2014-08-27 12:53:40;28;Male;MI;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;No
+2014-08-27 12:54:11;35;Male;CA;No;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 12:55:01;35;Female;NY;No;No;Never;Maybe;Maybe;Some of them;No
+2014-08-27 12:55:38;26;Male;CA;No;No;Rarely;No;No;Some of them;Yes
+2014-08-27 12:56:13;27;Male;TN;Yes;No;NA;Maybe;Maybe;Some of them;Some of them
+2014-08-27 12:57:38;27;Female;OR;Yes;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 12:57:52;34;female;MN;No;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 12:58:10;41;male;FL;No;Yes;Often;Maybe;Maybe;Some of them;Some of them
+2014-08-27 13:04:18;30;M;MA;No;Yes;Often;Maybe;No;Yes;Yes
+2014-08-27 13:04:45;24;male;KS;No;No;Never;No;No;Some of them;Yes
+2014-08-27 13:06:00;40;Female;DC;No;No;NA;No;No;Some of them;Yes
+2014-08-27 13:07:40;32;F;TX;Yes;Yes;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-27 13:07:42;32;f;MA;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 13:07:46;27;female;MI;Yes;Yes;Sometimes;No;No;Some of them;No
+2014-08-27 13:09:37;29;F;NY;No;Yes;Never;Maybe;No;Some of them;No
+2014-08-27 13:09:39;41;Male;VA;No;No;NA;Yes;No;No;Some of them
+2014-08-27 13:12:31;34;female;WA;No;No;NA;No;No;Yes;Yes
+2014-08-27 13:14:53;28;male;PA;No;No;Rarely;No;No;Some of them;Some of them
+2014-08-27 13:15:19;28;Male;MI;No;Yes;Sometimes;Yes;No;No;Some of them
+2014-08-27 13:15:25;23;Male;PA;No;No;Never;No;No;No;Yes
+2014-08-27 13:18:18;24;M;OR;No;No;NA;No;No;Yes;Yes
+2014-08-27 13:18:44;32;male;WA;No;No;Rarely;No;No;Some of them;Yes
+2014-08-27 13:21:00;24;Male;PA;No;No;Never;Maybe;No;Some of them;No
+2014-08-27 13:22:49;36;Male;OH;No;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 13:23:38;41;Male;TX;No;Yes;Rarely;Maybe;Maybe;Some of them;No
+2014-08-27 13:24:57;38;Male;NH;No;No;Sometimes;Maybe;Maybe;Some of them;Yes
+2014-08-27 13:29:57;37;F;NC;Yes;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 13:32:31;34;male;FL;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 13:32:48;33;M;CA;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 13:34:03;27;Male;GA;No;No;Never;No;No;Some of them;Yes
+2014-08-27 13:35:23;40;M;OH;No;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-27 13:35:40;21;Male;KY;No;Yes;Often;Maybe;No;No;No
+2014-08-27 13:37:47;32;M;NC;Yes;Yes;Sometimes;Maybe;No;Yes;Yes
+2014-08-27 13:38:17;29;f;NY;Yes;Yes;Rarely;Maybe;No;Some of them;No
+2014-08-27 13:39:00;23;Male;AL;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 13:40:58;28;Male;GA;Yes;No;NA;No;No;Some of them;Yes
+2014-08-27 13:42:38;31;male;CA;Yes;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 13:44:47;24;Male;VA;No;No;Sometimes;No;No;Yes;Yes
+2014-08-27 13:47:27;42;Male;WA;No;No;Never;No;No;Some of them;Yes
+2014-08-27 13:49:32;27;Female;TX;No;Yes;Rarely;Maybe;Maybe;Yes;No
+2014-08-27 13:52:57;30;Male;FL;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 13:53:51;32;male;NV;No;No;NA;No;No;Some of them;Yes
+2014-08-27 13:54:00;41;Male;AL;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 13:55:16;37;Female;CA;Yes;Yes;Often;Maybe;No;Some of them;Some of them
+2014-08-27 13:55:22;32;Male;CO;No;No;Never;No;No;Yes;Yes
+2014-08-27 13:56:27;23;female;MN;Yes;Yes;Never;No;No;Some of them;Yes
+2014-08-27 13:56:35;30;Male;NJ;No;No;NA;No;No;Some of them;Yes
+2014-08-27 13:59:35;38;Male;PA;No;Yes;Rarely;Yes;No;No;No
+2014-08-27 14:01:35;34;male;MO;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 14:03:16;28;male;MN;No;Yes;Rarely;Maybe;No;Some of them;Some of them
+2014-08-27 14:03:54;23;Male;PA;Yes;No;Sometimes;Maybe;No;Some of them;No
+2014-08-27 14:10:15;18;male;TX;No;Yes;Sometimes;Yes;No;No;No
+2014-08-27 14:10:47;35;male;NY;Yes;Yes;Sometimes;Yes;No;No;Some of them
+2014-08-27 14:11:52;26;Female;WA;Yes;Yes;Rarely;Maybe;No;Some of them;Some of them
+2014-08-27 14:11:55;18;Male;WA;No;No;Never;No;No;Some of them;Some of them
+2014-08-27 14:13:02;38;Female;TX;No;Yes;Sometimes;No;Maybe;Some of them;No
+2014-08-27 14:13:16;26;Female;TX;Yes;Yes;Rarely;Maybe;No;Some of them;No
+2014-08-27 14:14:52;35;male;CA;No;No;Never;Yes;Maybe;Some of them;Some of them
+2014-08-27 14:15:13;45;male;NY;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 14:15:21;32;Male;CA;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-27 14:15:57;56;Male;NA;No;Yes;Never;No;Maybe;Yes;Some of them
+2014-08-27 14:16:00;24;Female;CA;No;No;NA;Maybe;Maybe;Some of them;No
+2014-08-27 14:18:20;30;F;SC;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 14:18:41;60;male;CA;No;No;NA;No;No;Some of them;Yes
+2014-08-27 14:18:44;33;Male;CA;Yes;Yes;Sometimes;Yes;No;No;No
+2014-08-27 14:19:08;37;M;NY;No;No;Never;No;No;Some of them;Yes
+2014-08-27 14:19:12;23;Female;NY;No;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 14:20:08;31;f;CA;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 14:20:43;26;Male;MA;No;No;Rarely;No;No;Some of them;Yes
+2014-08-27 14:21:37;28;female;WA;Yes;Yes;Often;Yes;No;Some of them;Yes
+2014-08-27 14:21:42;37;F;CA;No;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 14:22:36;30;non-binary;IL;Yes;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 14:22:43;26;M;IN;No;No;NA;No;No;Some of them;Some of them
+2014-08-27 14:22:43;25;Male;OR;No;No;NA;No;No;Some of them;Yes
+2014-08-27 14:23:51;27;Male;TN;No;No;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 14:24:15;35;male;OR;No;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 14:25:41;36;Male;WA;No;Yes;Never;Maybe;No;Some of them;Yes
+2014-08-27 14:25:54;26;Male;CA;Yes;Yes;Sometimes;Yes;No;No;No
+2014-08-27 14:26:32;27;Male;CA;Yes;No;NA;No;No;Yes;Yes
+2014-08-27 14:27:20;30;male;VT;No;No;NA;Maybe;Maybe;Some of them;Some of them
+2014-08-27 14:27:27;29;M;NY;No;No;NA;Maybe;No;No;No
+2014-08-27 14:27:28;25;Male;UT;No;No;Never;No;No;Some of them;Yes
+2014-08-27 14:27:51;22;Female;NY;Yes;Yes;Often;Maybe;No;No;Some of them
+2014-08-27 14:28:41;41;Male;SD;Yes;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 14:28:43;29;Male;CA;No;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-08-27 14:28:49;32;Male;OR;No;No;Never;No;No;Some of them;Yes
+2014-08-27 14:28:51;24;female;CA;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 14:29:19;25;Male;CA;No;Yes;Rarely;Maybe;No;No;No
+2014-08-27 14:30:33;25;m;CA;No;No;NA;Maybe;No;No;No
+2014-08-27 14:31:06;30;Female;CO;No;No;Never;Maybe;Maybe;No;Some of them
+2014-08-27 14:31:28;25;Male;CA;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 14:31:44;30;Male;OH;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-27 14:32:46;24;Male;WA;No;No;NA;No;No;Some of them;Some of them
+2014-08-27 14:34:47;31;Male;OH;No;No;NA;Maybe;No;No;No
+2014-08-27 14:37:46;46;M;WA;No;No;Never;No;No;Some of them;Some of them
+2014-08-27 14:38:13;29;F;CA;No;No;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-27 14:38:26;24;Male;MA;No;No;NA;Yes;No;No;No
+2014-08-27 14:38:49;29;male;WA;No;No;NA;No;No;Some of them;Yes
+2014-08-27 14:38:54;35;Male;MI;No;No;NA;No;No;Yes;Yes
+2014-08-27 14:39:07;33;f;WA;Yes;No;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-27 14:39:20;27;Male;CA;No;No;Sometimes;Yes;No;No;No
+2014-08-27 14:41:09;36;Male;IA;No;No;NA;Maybe;No;Some of them;Some of them
+2014-08-27 14:44:29;25;F;WA;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 14:45:12;23;Male;AL;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 14:45:45;54;M;CA;Yes;Yes;Never;No;No;No;Yes
+2014-08-27 14:47:10;22;Male;CA;No;No;Sometimes;Maybe;No;Some of them;No
+2014-08-27 14:47:28;25;non-binary;CA;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 14:49:30;27;Male;MA;No;Yes;Sometimes;No;No;No;No
+2014-08-27 14:52:44;26;male;CA;Yes;Yes;Often;Maybe;No;Some of them;No
+2014-08-27 14:53:11;31;Male;CA;No;Yes;Sometimes;No;No;Some of them;No
+2014-08-27 14:54:23;33;M;IN;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 14:54:56;34;M;WA;Yes;Yes;Sometimes;Maybe;Maybe;No;No
+2014-08-27 14:57:46;34;Male;WA;No;Yes;Sometimes;Yes;Yes;Some of them;Some of them
+2014-08-27 14:58:01;29;M;IN;No;No;NA;No;No;Yes;Yes
+2014-08-27 14:59:59;33;f;WA;No;No;NA;Maybe;No;Some of them;Some of them
+2014-08-27 15:04:41;26;male;OK;Yes;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 15:05:00;32;Male;MI;Yes;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 15:05:21;329;Male;OH;No;Yes;Often;Maybe;No;Some of them;No
+2014-08-27 15:09:58;28;Male;GA;Yes;Yes;Sometimes;Maybe;Maybe;No;No
+2014-08-27 15:11:30;35;Male;CA;Yes;No;NA;No;No;Some of them;Yes
+2014-08-27 15:13:33;36;Male;NA;Yes;Yes;Often;No;No;Some of them;Some of them
+2014-08-27 15:14:50;21;Male;IN;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 15:15:42;22;F;WA;No;No;NA;No;No;No;Some of them
+2014-08-27 15:20:53;41;m;WA;Yes;Yes;Often;Maybe;No;Yes;Some of them
+2014-08-27 15:21:59;55;M;PA;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 15:22:20;32;F;WA;No;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 15:22:26;21;F;CA;Yes;Yes;Rarely;Yes;No;Some of them;No
+2014-08-27 15:22:43;45;M;MA;No;Yes;Never;Maybe;No;No;Some of them
+2014-08-27 15:22:45;27;female;WA;No;Yes;Rarely;Yes;Maybe;No;No
+2014-08-27 15:22:50;25;Female;WA;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 15:22:52;34;f;NY;Yes;Yes;Rarely;Maybe;Maybe;Some of them;Some of them
+2014-08-27 15:23:06;26;F;CA;Yes;Yes;Never;Maybe;No;No;No
+2014-08-27 15:23:19;27;Male;CA;No;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 15:23:30;31;m;IN;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 15:23:51;26;M;NV;No;Yes;Sometimes;Yes;Yes;Some of them;No
+2014-08-27 15:23:51;27;female;CO;Yes;Yes;Rarely;Maybe;Maybe;No;Yes
+2014-08-27 15:24:22;29;non-binary;CA;Yes;Yes;Sometimes;Yes;No;Some of them;No
+2014-08-27 15:24:27;25;female;CA;No;Yes;Sometimes;Yes;No;Some of them;No
+2014-08-27 15:24:47;40;female;PA;Yes;Yes;Rarely;Maybe;Maybe;No;No
+2014-08-27 15:24:49;31;Male;SC;No;No;Never;Yes;No;Some of them;No
+2014-08-27 15:24:56;24;female;TX;Yes;No;NA;Yes;Maybe;No;No
+2014-08-27 15:25:03;29;Male;TX;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-27 15:25:41;32;female;AL;No;No;Never;Maybe;No;No;Some of them
+2014-08-27 15:26:05;26;Male;OR;Yes;Yes;Often;Maybe;No;Some of them;Yes
+2014-08-27 15:26:37;28;Male;NJ;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 15:26:40;23;male;CA;No;No;NA;No;No;Some of them;Yes
+2014-08-27 15:26:57;35;M;CA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-27 15:27:31;26;Male;CA;Yes;No;NA;No;No;Some of them;Yes
+2014-08-27 15:27:38;33;Male;NH;Yes;Yes;Never;Yes;Maybe;Yes;Some of them
+2014-08-27 15:27:39;33;Male;CA;No;No;NA;Yes;No;Some of them;No
+2014-08-27 15:29:03;33;male;OH;Yes;Yes;Often;Yes;No;No;No
+2014-08-27 15:29:07;31;Female;OH;Yes;Yes;Rarely;Yes;Maybe;No;No
+2014-08-27 15:29:23;21;male;MA;Yes;No;Never;No;No;Some of them;Some of them
+2014-08-27 15:31:10;26;F;OK;No;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 15:31:18;30;Male;CA;Yes;No;Often;Maybe;No;Some of them;Yes
+2014-08-27 15:31:40;55;M;ID;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-27 15:34:31;28;Female;NY;No;Yes;Rarely;Maybe;No;No;No
+2014-08-27 15:34:32;21;M;CA;No;No;Sometimes;No;No;Some of them;Some of them
+2014-08-27 15:35:21;24;Male;TX;Yes;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-08-27 15:35:37;26;Female;MD;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 15:35:50;23;Male;IN;No;No;NA;No;No;Yes;No
+2014-08-27 15:36:13;24;Female;OR;No;No;NA;No;No;Some of them;Some of them
+2014-08-27 15:38:07;24;F;NY;Yes;Yes;Rarely;Yes;No;No;Some of them
+2014-08-27 15:38:27;33;male;MS;No;Yes;Often;Yes;Maybe;Some of them;Some of them
+2014-08-27 15:38:31;34;male;NJ;No;No;Sometimes;Maybe;No;Yes;Yes
+2014-08-27 15:38:32;27;female;CA;No;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-27 15:38:37;28;Male;TN;No;No;Never;No;No;Some of them;Yes
+2014-08-27 15:39:31;26;Male;WA;No;No;NA;No;No;Some of them;Yes
+2014-08-27 15:43:17;23;female;MA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 15:43:27;29;Male;PA;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 15:43:45;36;Male;KY;No;No;Rarely;Maybe;No;No;No
+2014-08-27 15:44:16;41;m;PA;No;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 15:44:20;33;female;MA;No;No;NA;No;No;Some of them;Yes
+2014-08-27 15:46:39;39;Male;CA;Yes;No;Often;Yes;No;Some of them;Some of them
+2014-08-27 15:47:26;34;M;VT;Yes;No;NA;Maybe;No;Some of them;Some of them
+2014-08-27 15:47:33;26;F;CA;No;Yes;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-27 15:50:26;24;Male;AZ;No;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 15:53:39;43;Male;MA;Yes;Yes;Often;No;No;Yes;Yes
+2014-08-27 15:53:59;40;non-binary;VA;Yes;No;Never;Yes;Maybe;No;Some of them
+2014-08-27 15:54:45;30;male;WA;Yes;Yes;Often;Yes;No;Some of them;No
+2014-08-27 15:55:07;34;M;CA;No;Yes;Sometimes;Yes;Yes;Some of them;No
+2014-08-27 15:55:07;27;Male;OR;Yes;Yes;Sometimes;Yes;No;No;No
+2014-08-27 15:55:08;36;Male;MI;No;No;Sometimes;No;No;Yes;Yes
+2014-08-27 15:59:47;37;M;OR;No;No;NA;Maybe;Maybe;Some of them;Some of them
+2014-08-27 16:01:39;33;f;CA;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-27 16:01:52;28;m;UT;No;No;Sometimes;Yes;Maybe;Some of them;No
+2014-08-27 16:02:16;26;Female;CA;Yes;No;Never;Maybe;Maybe;Some of them;No
+2014-08-27 16:03:20;27;M;TX;Yes;Yes;Sometimes;Yes;No;Some of them;Yes
+2014-08-27 16:06:46;57;M;CA;Yes;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 16:13:31;31;Male;OR;No;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 16:13:40;58;Male;CA;No;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 16:13:42;29;Male;OH;No;No;Sometimes;Yes;No;No;No
+2014-08-27 16:14:43;34;Male;OH;No;No;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 16:15:26;57;Male;CA;No;Yes;Sometimes;Maybe;Maybe;No;No
+2014-08-27 16:17:05;30;female;NY;No;No;NA;Maybe;No;Some of them;Yes
+2014-08-27 16:17:41;23;Male;VA;No;No;Never;No;No;Yes;Yes
+2014-08-27 16:18:44;43;M;CA;No;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-27 16:19:25;29;male;IL;No;Yes;Rarely;Maybe;No;Some of them;No
+2014-08-27 16:20:36;48;M;TX;No;No;Never;Maybe;No;No;No
+2014-08-27 16:21:11;28;Female;NY;Yes;Yes;Sometimes;Yes;Maybe;Some of them;No
+2014-08-27 16:21:24;30;Male;CA;Yes;Yes;Often;No;No;Yes;Yes
+2014-08-27 16:22:10;31;Male;CA;No;No;NA;No;No;No;Some of them
+2014-08-27 16:22:17;30;M;PA;No;No;Rarely;No;No;Some of them;Some of them
+2014-08-27 16:25:26;24;Female;CA;Yes;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 16:26:03;25;male;WA;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 16:27:04;23;Female;NY;Yes;Yes;Often;Maybe;No;Some of them;Some of them
+2014-08-27 16:27:47;36;m;TX;No;Yes;Sometimes;Yes;Maybe;Some of them;No
+2014-08-27 16:28:10;25;female;CA;Yes;Yes;Often;Yes;No;Some of them;No
+2014-08-27 16:29:23;38;female;AZ;No;Yes;NA;Maybe;Maybe;No;No
+2014-08-27 16:35:02;35;Female;OH;No;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-27 16:36:57;46;male;CA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 16:39:00;42;male;KS;No;No;Never;Maybe;No;Yes;Yes
+2014-08-27 16:40:35;47;M;CA;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 16:42:00;22;Male;CA;No;No;NA;No;No;Some of them;Yes
+2014-08-27 16:42:55;33;Female;NY;No;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 16:47:48;25;f;WA;No;No;Sometimes;Maybe;No;Some of them;No
+2014-08-27 16:53:54;29;M;CA;No;No;NA;Maybe;No;No;No
+2014-08-27 16:55:04;39;Male;WA;No;No;Never;No;No;Yes;Yes
+2014-08-27 17:00:15;38;male;VA;Yes;Yes;Sometimes;Yes;No;No;No
+2014-08-27 17:03:02;43;Male;NC;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 17:04:29;46;Male;OH;No;Yes;Rarely;No;No;Some of them;Yes
+2014-08-27 17:08:18;38;Female;PA;Yes;Yes;Sometimes;Maybe;No;Yes;Yes
+2014-08-27 17:12:01;62;M;CA;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-27 17:14:36;23;F;TX;No;No;NA;Maybe;Maybe;Some of them;Some of them
+2014-08-27 17:15:25;35;Male;AZ;No;No;NA;Maybe;Maybe;No;No
+2014-08-27 17:22:29;36;M;IL;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-27 17:32:04;41;Female;NA;Yes;Yes;Rarely;Maybe;Maybe;Some of them;Some of them
+2014-08-27 17:33:52;29;M;NC;No;Yes;Sometimes;No;No;No;Some of them
+2014-08-27 17:49:21;39;M;WI;Yes;Yes;Often;Yes;No;Some of them;Yes
+2014-08-27 17:49:30;26;M;CA;Yes;Yes;Never;Maybe;No;No;No
+2014-08-27 17:56:50;22;Female;CA;Yes;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-27 18:00:39;26;F;MN;Yes;Yes;Often;Maybe;No;No;No
+2014-08-27 18:02:32;31;Female;PA;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-27 18:12:55;28;female;CA;Yes;Yes;Often;Yes;Yes;Some of them;Some of them
+2014-08-27 18:18:18;36;Male;CA;Yes;Yes;Sometimes;Yes;No;Some of them;Yes
+2014-08-27 18:22:05;21;M;CA;Yes;No;NA;No;No;Some of them;Yes
+2014-08-27 18:39:43;25;m;CA;Yes;No;NA;Maybe;No;Some of them;Some of them
+2014-08-27 19:13:21;33;M;NY;No;No;NA;Yes;No;Some of them;No
+2014-08-27 19:16:15;24;M;CA;No;No;NA;Maybe;Maybe;Some of them;Some of them
+2014-08-27 19:17:07;65;Male;FL;No;No;NA;Maybe;No;Some of them;No
+2014-08-27 19:25:42;27;Male;OR;Yes;Yes;Sometimes;No;No;Some of them;No
+2014-08-27 19:28:35;36;Male;CO;No;Yes;Rarely;No;No;Some of them;Some of them
+2014-08-27 19:34:56;28;male;GA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-27 19:38:44;39;Male;OR;No;Yes;Sometimes;Yes;Maybe;Yes;Yes
+2014-08-27 19:41:28;32;Male;CA;No;Yes;Sometimes;No;No;Yes;Some of them
+2014-08-27 19:45:36;31;male;CA;Yes;No;Sometimes;Maybe;No;No;Some of them
+2014-08-27 19:59:12;38;m;PA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;No
+2014-08-27 20:13:06;23;Male;CA;Yes;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-27 20:17:52;42;m;CA;No;Yes;Often;Maybe;Maybe;Yes;Yes
+2014-08-27 20:33:33;27;Female;NY;No;No;Sometimes;No;No;Some of them;Yes
+2014-08-27 20:48:54;26;Female;MA;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 20:52:20;50;Male;NA;No;No;Never;No;No;No;No
+2014-08-27 20:52:31;37;Male;PA;Yes;No;Never;No;No;Yes;Yes
+2014-08-27 20:53:22;23;Male;RI;No;No;NA;No;No;Yes;Yes
+2014-08-27 20:55:48;33;M;MI;Yes;No;Sometimes;No;No;Some of them;Yes
+2014-08-27 21:15:09;34;Male;IL;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 21:17:31;41;male;CA;Yes;Yes;Often;Maybe;Maybe;Some of them;Some of them
+2014-08-27 21:21:31;50;Male;OR;Yes;No;NA;No;No;Some of them;Yes
+2014-08-27 21:39:23;35;Male;IN;No;No;Never;No;No;Some of them;Yes
+2014-08-27 21:54:29;40;Female;MA;No;No;Never;Maybe;Maybe;Yes;Yes
+2014-08-27 21:55:28;29;f;MI;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-27 22:00:36;31;Male;OH;Yes;Yes;Sometimes;Maybe;No;Yes;Yes
+2014-08-27 22:04:43;43;Male;OH;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-27 22:04:47;34;Male;NH;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 22:06:14;29;Male;OH;Yes;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-08-27 22:11:16;41;m;TN;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-27 22:12:55;29;Male;OR;Yes;No;Never;No;No;Some of them;Yes
+2014-08-27 22:13:55;23;Male;PA;No;No;Rarely;No;No;Some of them;Some of them
+2014-08-27 22:14:23;24;Female;NA;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-27 22:14:46;31;M;NY;No;No;NA;Yes;No;No;No
+2014-08-27 22:21:48;43;Male;WA;No;No;NA;No;No;Yes;Yes
+2014-08-27 22:26:03;31;Male;NY;Yes;Yes;Rarely;Yes;Yes;Some of them;No
+2014-08-27 22:32:36;29;Male;CA;Yes;No;Often;No;No;Some of them;Yes
+2014-08-27 22:35:40;35;Male;TN;Yes;No;NA;No;No;Yes;Yes
+2014-08-27 22:36:34;33;Male;WI;Yes;Yes;Sometimes;Yes;Yes;No;No
+2014-08-27 22:55:13;30;Female;WI;Yes;Yes;Often;No;No;Yes;Yes
+2014-08-27 22:59:23;27;male;PA;No;No;NA;Maybe;Maybe;No;No
+2014-08-27 23:09:46;32;Male;MI;No;No;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-27 23:10:16;50;Male;WY;No;No;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-27 23:10:23;24;male;KY;No;No;Never;Maybe;Yes;Some of them;No
+2014-08-27 23:14:58;27;Male;NY;No;No;NA;No;No;Yes;Yes
+2014-08-27 23:54:08;32;Male;TX;No;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-27 23:56:33;42;Male;WI;No;No;Rarely;No;No;Some of them;Yes
+2014-08-27 23:57:16;37;Male;WA;No;No;Often;Maybe;No;Some of them;No
+2014-08-28 00:02:36;29;Male;WA;No;No;Rarely;Yes;Maybe;Some of them;No
+2014-08-28 00:05:34;30;Male;GA;No;Yes;Often;No;No;Yes;Yes
+2014-08-28 00:17:24;35;Male;MI;No;No;Never;No;No;Some of them;Some of them
+2014-08-28 00:43:40;35;Male;MD;Yes;Yes;Rarely;Yes;No;Some of them;No
+2014-08-28 01:30:12;31;Female;WA;No;Yes;Often;Maybe;No;Some of them;Some of them
+2014-08-28 01:38:53;23;female;CA;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-28 01:41:17;31;Female;OR;Yes;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-28 01:56:43;28;Female;CA;Yes;Yes;Rarely;Maybe;No;No;Some of them
+2014-08-28 02:17:42;34;male;CA;Yes;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-28 02:30:00;28;Male;MI;Yes;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-08-28 02:41:47;56;m;MA;Yes;Yes;Rarely;Yes;Maybe;Some of them;Some of them
+2014-08-28 02:49:34;34;female;CA;No;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-28 03:13:10;35;Male;NA;No;No;NA;No;No;Some of them;Yes
+2014-08-28 03:36:10;57;Male;CA;No;No;Never;Yes;Maybe;No;No
+2014-08-28 04:07:34;39;M;FL;No;No;Rarely;No;No;Some of them;Some of them
+2014-08-28 04:23:01;32;M;WA;No;Yes;Never;Maybe;No;No;No
+2014-08-28 05:14:28;32;Male;CA;No;No;Never;Maybe;Maybe;Some of them;Some of them
+2014-08-28 07:03:03;23;Male;NC;Yes;No;Sometimes;Maybe;No;No;No
+2014-08-28 08:18:06;28;Male;IL;No;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-28 08:39:49;29;Female;OH;Yes;Yes;Rarely;Yes;No;No;No
+2014-08-28 08:43:23;45;Male;VA;No;Yes;Often;No;No;Yes;Yes
+2014-08-28 08:43:58;38;Male;MN;No;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-28 09:02:16;19;f;MO;Yes;Yes;Often;Maybe;Maybe;No;No
+2014-08-28 09:40:42;33;female;NC;Yes;Yes;Rarely;No;No;Some of them;Yes
+2014-08-28 09:53:42;49;Male;NY;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Yes
+2014-08-28 09:53:57;28;Male;NM;No;No;NA;Maybe;No;Some of them;No
+2014-08-28 09:56:21;39;F;TX;No;No;NA;Yes;Maybe;No;No
+2014-08-28 09:57:02;29;Male;SC;No;No;NA;Maybe;Maybe;Some of them;No
+2014-08-28 09:57:10;30;M;FL;No;No;NA;Maybe;No;Some of them;Yes
+2014-08-28 09:57:25;33;M;WA;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-28 09:58:08;37;male;CA;Yes;Yes;Sometimes;Maybe;No;Yes;Yes
+2014-08-28 09:59:39;23;Male;OH;No;Yes;Often;No;No;Some of them;Yes
+2014-08-28 09:59:39;43;M;TN;Yes;Yes;Sometimes;Yes;No;No;No
+2014-08-28 10:01:15;26;Male;NY;No;No;Never;Yes;Yes;Some of them;No
+2014-08-28 10:01:31;32;Male;NY;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-28 10:02:09;37;F;MO;No;No;NA;Yes;No;Some of them;No
+2014-08-28 10:02:23;29;Male;NY;No;Yes;Often;No;No;Yes;Yes
+2014-08-28 10:04:41;30;male;TN;Yes;No;Never;No;No;Some of them;Yes
+2014-08-28 10:05:43;29;Male;CO;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-28 10:07:37;32;Male;PA;Yes;Yes;Sometimes;Yes;Maybe;Some of them;No
+2014-08-28 10:08:34;37;male;NY;No;No;NA;No;No;Yes;Yes
+2014-08-28 10:11:52;27;m;MN;No;No;NA;No;No;Yes;Yes
+2014-08-28 10:17:19;25;Male;MO;Yes;Yes;Never;Yes;No;Some of them;Yes
+2014-08-28 10:18:34;33;Male;WY;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-28 10:24:19;29;Male;MN;No;No;NA;No;No;Yes;Yes
+2014-08-28 10:30:44;29;Male;MD;No;No;NA;No;No;Yes;Yes
+2014-08-28 10:34:01;31;Male;KY;No;No;NA;No;No;Yes;Yes
+2014-08-28 10:45:21;43;male;NY;No;No;NA;No;No;Some of them;Yes
+2014-08-28 10:52:33;36;Male;TN;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-28 11:04:00;31;Male;TX;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-28 11:04:17;36;Male;OH;No;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-28 11:07:23;30;Male;TX;No;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-28 11:14:21;35;Male;CA;Yes;Yes;Rarely;No;No;Some of them;Yes
+2014-08-28 11:21:17;37;Male;MI;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-28 11:22:04;36;M;CA;No;No;Never;No;No;Some of them;Yes
+2014-08-28 11:26:15;29;Female;OR;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-28 11:27:56;38;f;NC;Yes;Yes;Sometimes;Maybe;No;No;No
+2014-08-28 11:29:20;26;M;CA;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-28 11:34:36;21;Male;IL;No;Yes;Often;Yes;No;Some of them;Some of them
+2014-08-28 11:38:30;37;Female;CA;Yes;Yes;Rarely;Maybe;Maybe;Yes;Some of them
+2014-08-28 11:47:35;27;Female;CA;No;Yes;Sometimes;Yes;No;Some of them;No
+2014-08-28 11:50:06;33;Female;AZ;Yes;Yes;Sometimes;Maybe;Yes;Some of them;No
+2014-08-28 11:54:23;36;F;CA;No;Yes;Never;Maybe;Maybe;Some of them;Some of them
+2014-08-28 12:02:59;33;Male;VA;Yes;Yes;Sometimes;Maybe;Maybe;Yes;Yes
+2014-08-28 12:09:18;43;m;VA;No;No;Sometimes;Maybe;No;No;No
+2014-08-28 12:10:42;27;Female;WA;No;No;NA;Maybe;No;Some of them;Yes
+2014-08-28 12:19:34;33;Male;WI;No;Yes;Sometimes;No;No;Yes;Yes
+2014-08-28 12:22:14;33;M;CA;No;No;NA;No;No;Yes;Yes
+2014-08-28 12:23:37;25;Male;CA;No;No;NA;No;No;Some of them;Yes
+2014-08-28 12:30:20;25;Male;NE;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-28 12:42:12;25;Male;CO;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-28 13:01:26;33;Male;NY;No;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-28 13:04:30;37;female;TX;No;Yes;Often;Yes;No;Some of them;Some of them
+2014-08-28 13:08:36;35;Female;LA;No;Yes;Sometimes;Yes;Maybe;No;Some of them
+2014-08-28 13:11:05;22;Female;WA;Yes;Yes;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-28 13:17:40;38;Male;MI;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-28 13:26:17;32;Female;CA;Yes;Yes;Often;Yes;No;Some of them;Yes
+2014-08-28 13:35:25;35;female;CA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-28 13:39:12;29;Male;MD;No;No;Never;Yes;Maybe;Yes;Yes
+2014-08-28 13:39:40;23;Male;CA;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-28 13:40:08;39;M;CT;No;No;NA;Yes;Maybe;No;No
+2014-08-28 13:41:51;30;Female;CA;No;No;NA;No;No;Some of them;No
+2014-08-28 13:47:57;28;Female;CA;No;Yes;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-28 13:48:30;40;female;WA;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-28 13:54:47;36;f;CA;Yes;No;NA;No;No;No;Some of them
+2014-08-28 13:57:01;27;Male;IN;No;No;NA;No;No;Yes;Yes
+2014-08-28 14:00:02;41;Male;TX;Yes;No;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-28 14:04:54;35;Male;MO;No;Yes;Often;Yes;No;Some of them;Some of them
+2014-08-28 14:12:58;28;Male;NV;No;Yes;Never;Maybe;Maybe;Some of them;Some of them
+2014-08-28 14:31:00;39;Female;WA;No;No;Sometimes;Yes;No;No;No
+2014-08-28 14:38:50;39;Male;FL;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-28 14:41:47;44;male;NA;Yes;Yes;Sometimes;Yes;Yes;Some of them;No
+2014-08-28 14:52:46;40;Female;WA;Yes;Yes;Sometimes;Yes;Maybe;Some of them;No
+2014-08-28 14:53:32;38;M;IL;No;No;Never;Yes;Yes;No;No
+2014-08-28 14:57:10;34;Male;FL;No;No;NA;No;No;Some of them;Yes
+2014-08-28 15:01:46;43;M;MA;No;No;NA;No;No;Some of them;Yes
+2014-08-28 15:25:39;48;Female;CA;Yes;No;Often;Yes;Yes;No;Some of them
+2014-08-28 15:32:03;20;Male;WA;No;No;Never;No;No;Some of them;Yes
+2014-08-28 15:37:04;40;M;MI;No;No;Sometimes;Yes;Maybe;Some of them;No
+2014-08-28 15:43:37;35;Male;MI;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-28 15:48:12;29;Male;WI;Yes;No;Sometimes;Maybe;No;Some of them;No
+2014-08-28 15:50:12;40;M;CA;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-28 15:54:35;29;F;CA;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-28 15:56:47;34;male;TX;No;Yes;Sometimes;Yes;No;No;No
+2014-08-28 16:17:09;24;female;NY;Yes;Yes;Often;No;No;Some of them;Yes
+2014-08-28 16:31:00;47;F;PA;No;No;NA;Yes;Yes;No;No
+2014-08-28 16:52:23;36;M;PA;No;No;Rarely;No;No;Some of them;Yes
+2014-08-28 16:52:34;43;male;GA;No;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-28 16:54:49;31;Female;NY;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-28 16:55:07;35;Male;CA;No;No;Sometimes;Maybe;No;Some of them;No
+2014-08-28 16:55:31;33;male;TN;Yes;No;NA;No;No;Some of them;Some of them
+2014-08-28 16:56:57;34;M;TN;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-28 16:57:07;40;m;TN;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-28 16:57:46;40;M;IL;No;No;Rarely;No;No;Some of them;Some of them
+2014-08-28 16:57:49;42;Male;WI;No;Yes;Sometimes;Maybe;No;No;No
+2014-08-28 16:58:33;23;M;KY;Yes;No;NA;Maybe;No;No;Some of them
+2014-08-28 17:01:06;31;Male;NA;Yes;No;NA;Maybe;No;Some of them;Some of them
+2014-08-28 17:01:21;25;M;CA;Yes;No;NA;No;No;Some of them;Yes
+2014-08-28 17:01:25;51;Male;MN;No;No;Never;No;No;Yes;Yes
+2014-08-28 17:02:27;24;Male;TN;No;No;NA;No;No;Some of them;Yes
+2014-08-28 17:02:29;33;Male;MN;No;No;NA;Maybe;No;Some of them;Yes
+2014-08-28 17:07:11;23;M;IL;No;No;Never;Maybe;No;Some of them;Some of them
+2014-08-28 17:07:28;33;Male;TN;Yes;Yes;Often;Yes;No;Some of them;Yes
+2014-08-28 17:07:39;46;Male;IL;No;Yes;Rarely;Yes;Maybe;No;No
+2014-08-28 17:09:03;35;M;DC;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-28 17:10:00;39;M;KS;No;No;NA;Maybe;Maybe;Some of them;Yes
+2014-08-28 17:11:48;56;m;CA;No;Yes;Rarely;No;No;Yes;Yes
+2014-08-28 17:16:53;39;Male;TN;No;No;NA;No;No;Some of them;Yes
+2014-08-28 17:19:05;37;Male;OK;Yes;No;NA;Maybe;No;No;No
+2014-08-28 17:19:27;30;m;CA;Yes;Yes;Sometimes;Yes;No;No;No
+2014-08-28 17:19:53;31;Male;TN;No;No;NA;Maybe;No;Some of them;Some of them
+2014-08-28 17:20:23;29;M;TX;No;No;NA;Maybe;No;No;Some of them
+2014-08-28 17:21:01;31;male;CO;No;Yes;Never;Maybe;No;No;No
+2014-08-28 17:21:43;29;Male;TN;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-28 17:22:18;30;m;GA;No;No;Never;No;No;Some of them;Yes
+2014-08-28 17:22:53;37;Male;TN;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-28 17:23:19;36;male;VA;No;No;Never;No;No;Some of them;Yes
+2014-08-28 17:27:03;35;Male;TN;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;No
+2014-08-28 17:27:47;41;M;DC;Yes;No;Never;Maybe;No;No;No
+2014-08-28 17:33:05;39;Male;TN;Yes;No;Sometimes;Maybe;Maybe;Some of them;Yes
+2014-08-28 17:33:20;42;male;VA;Yes;No;Sometimes;Maybe;Maybe;Some of them;No
+2014-08-28 17:34:30;32;Male;TN;Yes;Yes;Rarely;Yes;No;Some of them;No
+2014-08-28 17:35:14;29;m;TN;Yes;No;NA;No;No;Some of them;Yes
+2014-08-28 17:36:48;30;Male;TN;Yes;No;Never;Yes;Yes;Some of them;No
+2014-08-28 17:39:06;40;M;TN;Yes;Yes;Often;Maybe;Maybe;Some of them;Some of them
+2014-08-28 17:45:21;51;m;TN;No;No;NA;No;No;Some of them;Yes
+2014-08-28 17:46:37;33;Male;IN;No;No;Never;No;No;Some of them;Yes
+2014-08-28 17:47:49;50;Male;VA;No;No;Never;No;No;Some of them;Yes
+2014-08-28 17:50:32;24;Male;TX;No;No;Sometimes;No;No;Some of them;Yes
+2014-08-28 17:56:02;25;Male;TX;Yes;Yes;Rarely;Yes;Maybe;No;No
+2014-08-28 17:57:42;25;f;CA;No;Yes;Often;Maybe;Maybe;Some of them;Some of them
+2014-08-28 17:59:54;51;m;CO;No;No;Never;No;No;Some of them;Some of them
+2014-08-28 17:59:57;49;Male;OR;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-28 18:01:00;30;Male;OK;No;No;NA;Yes;Maybe;No;No
+2014-08-28 18:02:09;25;female;OH;Yes;Yes;Sometimes;Yes;Yes;No;No
+2014-08-28 18:07:42;36;Male;TN;No;Yes;Rarely;Maybe;No;No;No
+2014-08-28 18:17:41;48;Male;VA;No;Yes;Never;Maybe;Maybe;Yes;Yes
+2014-08-28 18:21:23;53;Male;OR;No;Yes;Rarely;Maybe;Maybe;Some of them;No
+2014-08-28 18:26:35;33;Male;OR;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-28 19:04:05;30;Male;PA;No;No;Never;Maybe;Maybe;Some of them;Some of them
+2014-08-28 19:26:03;31;Male;SC;No;No;NA;No;No;Some of them;Yes
+2014-08-28 19:28:27;22;F;CA;Yes;Yes;Often;Yes;Yes;No;No
+2014-08-28 19:35:39;28;Male;TN;Yes;No;Sometimes;No;No;Some of them;Yes
+2014-08-28 20:12:08;35;Male;UT;Yes;Yes;Rarely;Maybe;No;Some of them;Some of them
+2014-08-28 20:31:02;28;Male;CA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-28 21:22:40;33;Male;MO;Yes;No;NA;No;No;Yes;Yes
+2014-08-28 21:24:48;29;male;CA;No;No;Sometimes;Yes;Maybe;No;No
+2014-08-28 21:27:19;43;M;NA;Yes;No;Sometimes;Maybe;No;No;Some of them
+2014-08-28 21:30:35;29;Male;NY;No;No;NA;No;No;Some of them;Some of them
+2014-08-28 21:33:32;25;Male;TX;No;No;NA;No;No;Yes;Yes
+2014-08-28 21:38:12;31;Male;MO;Yes;No;Never;No;No;Some of them;Yes
+2014-08-28 21:41:53;35;Female;GA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Yes
+2014-08-28 21:47:33;34;male;TX;No;No;Often;No;No;Some of them;Yes
+2014-08-28 22:16:34;43;Male;WA;No;Yes;Sometimes;Yes;Maybe;Some of them;No
+2014-08-28 22:17:15;38;Male;WA;Yes;Yes;Sometimes;Yes;Yes;No;Some of them
+2014-08-28 22:18:41;26;Male;WA;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-28 22:22:39;42;Male;TX;No;Yes;Often;Yes;Maybe;No;No
+2014-08-28 22:35:10;32;Male;WA;No;Yes;Rarely;Maybe;No;Some of them;Some of them
+2014-08-28 22:39:57;44;male;WA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Yes
+2014-08-28 22:46:40;28;Male;WA;Yes;Yes;Rarely;Maybe;No;Some of them;No
+2014-08-28 23:03:05;40;Male;WA;Yes;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-08-28 23:13:18;31;F;AZ;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-28 23:16:30;32;male;WA;Yes;No;Sometimes;Yes;No;Some of them;No
+2014-08-28 23:57:07;28;Male;WA;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-29 00:05:07;39;Male;AZ;Yes;Yes;Often;Yes;No;Some of them;No
+2014-08-29 00:06:49;45;Male;NY;No;No;NA;No;No;Some of them;Some of them
+2014-08-29 00:11:17;43;Male;WA;No;Yes;Rarely;No;No;Yes;Yes
+2014-08-29 00:41:25;35;Male;CA;No;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-29 00:43:37;40;Male;WA;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-29 01:40:36;36;f;WA;Yes;Yes;Rarely;Yes;Maybe;Some of them;No
+2014-08-29 02:10:57;38;Male;TN;No;No;NA;Maybe;No;Some of them;Yes
+2014-08-29 03:02:16;30;male;WA;Yes;No;Never;Yes;Maybe;No;No
+2014-08-29 03:08:25;26;Male;CA;No;Yes;Rarely;No;No;Some of them;Some of them
+2014-08-29 07:12:43;43;Male;MI;No;No;Sometimes;Yes;Maybe;No;No
+2014-08-29 07:28:17;40;Male;IN;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-29 07:51:42;49;Male;GA;Yes;No;Never;No;No;Yes;Yes
+2014-08-29 08:46:31;38;male;WA;No;No;Never;Maybe;Maybe;Some of them;Some of them
+2014-08-29 08:57:42;40;Male;ME;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Yes
+2014-08-29 09:01:01;28;male;NY;Yes;Yes;Often;Maybe;No;Some of them;Some of them
+2014-08-29 09:10:08;23;Male;PA;Yes;No;Sometimes;No;No;No;No
+2014-08-29 09:14:45;30;Female;IL;Yes;Yes;Sometimes;No;No;Some of them;No
+2014-08-29 09:24:34;39;male;MN;No;Yes;Rarely;Maybe;No;Some of them;Yes
+2014-08-29 09:23:22;31;Female;TX;Yes;No;Never;Yes;Yes;No;No
+2014-08-29 09:29:37;25;Male;PA;Yes;Yes;Often;No;No;Yes;Yes
+2014-08-29 09:31:37;42;male;IN;Yes;Yes;Sometimes;Maybe;No;Some of them;Yes
+2014-08-29 09:31:49;34;male;PA;Yes;Yes;Often;No;No;Yes;Yes
+2014-08-29 09:33:43;26;female;OH;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-29 09:36:46;38;m;PA;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-29 09:40:13;34;M;SD;No;No;Sometimes;Yes;No;Some of them;No
+2014-08-29 09:42:23;39;M;IN;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-29 09:46:56;44;F;CA;No;No;NA;Yes;No;No;No
+2014-08-29 09:47:10;40;male;TN;No;No;NA;Maybe;No;No;Yes
+2014-08-29 09:47:30;33;female;TX;No;No;Never;Maybe;No;No;Some of them
+2014-08-29 09:51:35;24;Female;TN;Yes;No;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-29 09:53:38;38;Female;OR;Yes;No;Sometimes;No;No;Some of them;Yes
+2014-08-29 09:53:50;31;male;SD;No;No;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-29 09:54:11;26;F;NY;No;No;NA;No;No;Yes;Yes
+2014-08-29 09:58:55;46;Female;CT;No;Yes;Often;Yes;No;Some of them;Some of them
+2014-08-29 09:59:39;30;Male;CA;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-29 10:03:24;25;Male;NA;No;No;Rarely;Yes;No;Some of them;Some of them
+2014-08-29 10:06:29;30;Female;GA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-29 10:12:10;32;m;TN;No;No;Never;No;No;Yes;Yes
+2014-08-29 10:13:43;37;Male;IN;Yes;No;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-29 10:16:45;42;M;CA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-29 10:27:15;25;female;OR;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-29 10:30:09;19;Male;IN;No;No;Sometimes;No;No;Some of them;Yes
+2014-08-29 10:32:24;40;female;GA;Yes;No;Never;Yes;Yes;No;No
+2014-08-29 10:33:45;34;Male;IN;No;No;NA;Maybe;Maybe;Some of them;Yes
+2014-08-29 10:38:23;26;Male;MN;Yes;No;NA;No;No;Some of them;Yes
+2014-08-29 10:38:29;31;Male;MN;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-29 10:55:24;40;Male;NC;Yes;No;Sometimes;Yes;Maybe;Some of them;Some of them
+2014-08-29 10:59:57;31;Female;FL;Yes;Yes;Often;Yes;No;No;No
+2014-08-29 11:01:41;36;M;MN;No;No;Never;Yes;Maybe;No;No
+2014-08-29 11:05:00;44;m;MO;No;No;NA;Yes;No;Some of them;No
+2014-08-29 11:11:00;34;Female;CA;No;No;Sometimes;No;No;Some of them;Yes
+2014-08-29 11:12:22;35;Male;OR;No;No;NA;No;No;No;No
+2014-08-29 11:19:46;28;female;OH;Yes;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-08-29 11:20:13;33;Male;NY;No;No;NA;No;No;Some of them;Yes
+2014-08-29 11:20:28;40;M;WI;Yes;Yes;Sometimes;Yes;No;No;No
+2014-08-29 11:20:52;26;Male;WA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-29 11:27:47;41;Male;IL;No;Yes;Often;No;No;Some of them;Some of them
+2014-08-29 11:32:44;26;female;WA;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-29 11:33:54;23;Female;IL;Yes;No;Sometimes;Yes;No;No;Some of them
+2014-08-29 11:36:38;36;Male;FL;No;No;Never;No;No;Some of them;Some of them
+2014-08-29 11:39:33;42;M;TN;No;No;Rarely;Maybe;No;Some of them;No
+2014-08-29 11:40:29;39;Male;WA;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-29 11:43:12;27;Male;CA;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-29 11:44:33;33;male;FL;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-29 11:53:59;28;Female;OR;No;Yes;Rarely;No;No;Some of them;Some of them
+2014-08-29 11:54:38;29;Female;NJ;No;Yes;Often;No;No;Some of them;Yes
+2014-08-29 11:56:18;27;Male;CA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-29 12:00:33;44;M;FL;No;No;Never;No;No;No;No
+2014-08-29 12:08:12;25;Male;UT;No;Yes;Often;Maybe;No;Some of them;No
+2014-08-29 12:26:21;34;M;NJ;No;No;Never;Maybe;Maybe;No;Some of them
+2014-08-29 12:27:54;26;Male;PA;No;No;Never;Maybe;No;No;Yes
+2014-08-29 12:45:11;48;Male;IN;No;No;Never;Maybe;No;Some of them;Yes
+2014-08-29 12:54:31;39;Female;OH;No;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-29 13:17:33;43;Male;OH;No;No;Sometimes;Maybe;No;No;No
+2014-08-29 13:23:40;41;M;IL;No;No;Rarely;Maybe;Maybe;Some of them;No
+2014-08-29 13:58:25;25;Male;IN;No;No;Never;No;No;Some of them;Yes
+2014-08-29 14:04:59;31;m;CA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-08-29 14:09:21;40;Male;WA;Yes;Yes;Sometimes;Yes;Yes;No;No
+2014-08-29 14:31:00;43;Male;VA;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-08-29 14:51:49;27;Female;WA;Yes;Yes;Often;Maybe;No;Yes;Some of them
+2014-08-29 14:59:43;37;female;NJ;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2014-08-29 15:59:55;25;Male;UT;Yes;Yes;Often;Maybe;No;Yes;Yes
+2014-08-29 16:17:32;30;Female;TN;Yes;Yes;Often;Yes;No;No;No
+2014-08-29 16:56:06;38;male;IN;Yes;No;Never;Yes;Maybe;Some of them;No
+2014-08-29 17:04:07;32;Male;IN;No;Yes;Sometimes;No;No;Some of them;Yes
+2014-08-29 17:04:12;28;Female;CA;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-29 17:32:31;43;male;TX;Yes;No;Never;Maybe;No;Some of them;Some of them
+2014-08-29 17:35:16;32;Male;TN;Yes;Yes;Often;Yes;No;Yes;Yes
+2014-08-29 17:54:32;25;M;WA;No;Yes;Sometimes;Yes;No;No;No
+2014-08-29 18:33:32;37;Male;UT;No;Yes;Sometimes;No;No;No;Yes
+2014-08-29 18:39:07;36;male;AL;No;Yes;Sometimes;No;No;No;No
+2014-08-29 19:32:13;24;Male;WI;Yes;Yes;Rarely;No;No;Yes;Yes
+2014-08-29 19:34:40;40;male;WA;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-08-29 20:53:09;29;Male;WI;No;No;NA;No;No;Some of them;Yes
+2014-08-29 20:53:58;43;Male;NY;No;No;Never;No;No;Yes;Some of them
+2014-08-29 21:26:44;29;Male;NY;No;No;NA;Maybe;No;Some of them;Yes
+2014-08-29 21:28:14;26;Male;OH;Yes;No;Sometimes;Maybe;No;Some of them;No
+2014-08-29 22:08:51;35;Female;WA;Yes;No;Sometimes;No;No;Yes;Some of them
+2014-08-29 23:51:01;45;M;CA;No;No;Never;Yes;Maybe;Some of them;No
+2014-08-30 00:09:55;25;Male;SC;No;Yes;Rarely;Maybe;No;No;Some of them
+2014-08-30 05:47:08;33;female;CA;No;Yes;Often;Yes;No;No;No
+2014-08-30 13:23:57;25;Male;MN;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-08-30 13:48:34;40;m;WA;No;No;NA;Maybe;No;Some of them;Some of them
+2014-08-30 15:57:04;46;Male;PA;Yes;Yes;Sometimes;Yes;Maybe;No;Some of them
+2014-08-30 16:13:40;38;Male;NY;Yes;Yes;Rarely;Yes;No;No;Yes
+2014-08-30 16:38:02;34;Male;VT;No;No;Never;Yes;Yes;No;No
+2014-08-30 20:12:33;45;female;MI;No;Yes;Rarely;No;No;Some of them;Some of them
+2014-08-30 20:19:37;35;Male;NY;No;No;NA;No;No;No;No
+2014-08-30 20:46:35;20;female;NY;No;Yes;Sometimes;No;No;Some of them;Some of them
+2014-08-31 09:19:43;28;male;MI;No;No;NA;Maybe;No;No;No
+2014-08-31 15:03:12;42;F;WA;Yes;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-08-31 16:48:13;36;F;TN;Yes;Yes;Rarely;Maybe;Maybe;Some of them;No
+2014-09-01 12:45:24;26;F;NY;Yes;No;Sometimes;Maybe;No;No;No
+2014-09-01 21:34:12;35;M;IN;Yes;Yes;Often;Yes;No;No;Some of them
+2014-09-01 22:58:47;32;male;NC;No;No;Rarely;Maybe;No;No;Some of them
+2014-09-02 03:13:53;32;Male;CA;No;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-09-02 09:57:22;39;Male;TN;Yes;Yes;Often;Yes;No;Some of them;Some of them
+2014-09-02 20:57:56;30;m;MN;Yes;Yes;Rarely;No;No;No;No
+2014-09-03 13:09:52;29;M;NC;No;Yes;Sometimes;Yes;No;Some of them;Some of them
+2014-09-04 17:38:22;26;Male;TX;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-09-04 23:42:28;46;Female;CA;No;Yes;Often;Maybe;No;Some of them;Some of them
+2014-09-05 14:15:48;32;Male;CA;Yes;No;Sometimes;Maybe;No;Yes;Yes
+2014-09-05 14:19:00;29;Male;IL;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2014-09-08 21:30:59;32;Female;PA;No;Yes;Sometimes;Maybe;No;Some of them;No
+2014-09-09 13:49:50;29;Male;IL;No;No;NA;Maybe;No;Some of them;Yes
+2014-09-11 17:00:30;30;Male;IL;No;No;NA;Yes;Maybe;No;No
+2014-09-12 19:18:18;40;F;MN;Yes;Yes;Sometimes;No;No;Yes;Yes
+2014-09-14 20:50:05;38;male;NY;Yes;No;NA;No;No;Some of them;Yes
+2014-09-20 13:51:05;26;Female;MI;Yes;Yes;Rarely;Maybe;Maybe;No;No
+2014-09-23 20:05:05;29;Male;OH;No;No;Never;No;No;Some of them;Yes
+2014-09-26 21:25:14;32;f;NY;No;Yes;Sometimes;Maybe;Maybe;Some of them;No
+2014-09-30 09:19:01;38;male;CA;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2014-10-02 21:25:16;72;Female;IN;Yes;Yes;Never;Maybe;Maybe;Some of them;Yes
+2014-10-05 21:16:10;35;female;IN;Yes;Yes;Sometimes;Maybe;Maybe;Some of them;Some of them
+2014-10-09 11:14:59;28;F;VA;No;Yes;Often;Yes;Maybe;Some of them;Some of them
+2014-11-05 10:08:44;27;f;OK;No;No;Never;No;No;Some of them;Yes
+2014-11-06 11:24:38;56;female;OR;No;No;Rarely;Maybe;Maybe;No;No
+2014-11-16 08:42:35;38;Male;AL;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2014-12-15 00:43:49;40;Male;AL;Yes;Yes;Sometimes;Maybe;No;Some of them;No
+2015-01-03 03:38:30;44;M;OH;Yes;Yes;Sometimes;Maybe;No;Some of them;Some of them
+2015-02-21 04:41:28;32;Male;TX;No;Yes;Often;Yes;Maybe;Some of them;No
+2015-02-21 05:11:37;28;Female;TX;No;Yes;Rarely;Yes;Yes;Some of them;No
+2015-02-21 08:21:36;23;Male;TX;No;Yes;Sometimes;Maybe;Maybe;Some of them;Yes
+2015-02-21 09:22:23;33;Male;FL;No;Yes;Often;Maybe;No;Some of them;No
+2015-02-21 09:48:13;38;Male;TX;No;Yes;Sometimes;No;No;Yes;Yes
+2015-02-21 10:00:50;46;Male;CA;Yes;Yes;Often;Maybe;No;Some of them;No
+2015-02-21 10:45:51;46;male;MD;Yes;Yes;Sometimes;No;No;Some of them;Yes
+2015-02-21 18:59:05;25;Male;MN;Yes;Yes;Sometimes;Yes;No;Some of them;Some of them
+2015-02-24 10:32:32;60;Male;CA;No;Yes;Often;Maybe;Maybe;Some of them;No
+2015-04-02 15:47:43;28;Male;TN;Yes;Yes;Often;Yes;Maybe;Some of them;Yes
+2015-05-05 14:22:18;43;f;FL;Yes;Yes;Rarely;No;No;Some of them;Yes
+2015-05-06 16:55:58;32;Male;OR;No;No;Never;No;No;No;Some of them
+2015-06-25 12:24:31;41;Female;WA;Yes;Yes;Sometimes;Yes;Maybe;No;No
+2015-07-22 18:57:54;30;M;CA;Yes;Yes;Sometimes;No;No;Yes;Yes
+2015-07-27 23:25:34;30;Male;CA;Yes;Yes;Often;No;No;Some of them;Yes
+2015-08-20 16:52:09;29;male;NC;Yes;Yes;Sometimes;Yes;No;Some of them;No
+2015-08-25 19:59:38;36;Male;UT;Yes;No;Rarely;Maybe;Maybe;Some of them;Some of them
+2015-09-26 01:07:35;32;Male;IL;Yes;Yes;Often;No;No;Some of them;Yes
+2015-11-07 12:36:58;34;male;CA;Yes;Yes;Sometimes;Yes;Yes;No;No
+2015-11-30 21:25:06;46;f;NC;No;No;NA;Yes;No;No;No
+2016-02-01 23:04:31;25;Male;IL;Yes;Yes;Sometimes;Maybe;No;Some of them;No
