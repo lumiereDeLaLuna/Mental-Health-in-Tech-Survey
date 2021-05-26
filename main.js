@@ -15,7 +15,7 @@ function prepareData() {
 
     cumulateState = gmynd.cumulateData(data, "state");
     cumulateState = gmynd.mergeData(cumulateState, positionData, "state");
-    console.log(cumulateState)
+    //console.log(cumulateState)
 };
 
 function drawMap() {
