@@ -1,15 +1,15 @@
 let stageHeight, stageWidth;
-let data, cumulateState, cumulateFamiliybackground, groupeFamilybackground;
+let data, cumulateState, cumulateFamiliybackground, groupeFamilyBackground, groupedByWork;
 let stage;
 
 $(function () {
     stage = $('#stage');
-    stageHeight = $('#stage').innerHeight();
-    stageWidth = $('#stage').innerWidth();
+    stageHeight = stage.innerHeight();
+    stageWidth = stage.innerWidth();
     prepareData();
-    drawFamilybackground();
+    drawFamilyBackground();
     //drawMap();
-})
+});
 
 function prepareData() {
     data = gmynd.mergeData(infoData, positionData, "state");
@@ -19,11 +19,12 @@ function prepareData() {
     cumulateState = gmynd.deleteProps(cumulateState, "city")
     //console.log(cumulateState)
 
-    groupeFamilybackground = gmynd.groupData(data, ["workInterfere", "treatment", "gender"]);
-    console.log(groupeFamilybackground);
+    groupeFamilyBackground = gmynd.groupData(data, ["workInterfere", "treatment", "gender"]);
+    groupedByWork = gmynd.groupData(data, "workInterfere");
+    console.log(groupeFamilyBackground);
 
-    //groupeFamilybackground = gmynd.sortData(groupeFamilybackground, "treatment");
-    //console.log(groupeFamilybackground);
+    //groupeFamilyBackground = gmynd.sortData(groupeFamilyBackground, "treatment");
+    //console.log(groupeFamilyBackground);
 
     //cumulateFamiliybackground = gmynd.cumulateData(data, ["workInterfere", "treatment", "gender"]);
     //cumulateFamiliybackground = gmynd.sortData(cumulateFamiliybackground, "treatment");
@@ -66,28 +67,36 @@ function drawMap() {
     });
 }
 
-function drawFamilybackground() {
-    const keys = Object.keys(groupeFamilybackground);
-    const keyCount = keys.length;
-    console.log(keys)
+function drawFamilyBackground() {
+    /*  const keys = Object.keys(groupeFamilyBackground);
+      const keyCount = keys.length;
+      console.log(keys)*/
 
     let i = 0;
 
-    for (let key in groupeFamilybackground) {
-        familybackground = groupeFamilybackground[key];
-        console.log(familybackground)
+    for (let key in groupedByWork) {
+        //geht jedes workinterfere einmal durch....
+
+        let workInterfere = groupedByWork[key];
+        // console.log(workInterfere);
 
         const rFam = 10;
-        const xFam = 10;
-        const yFam = 10;
+        const xFam = 100 * i;
+        const yFam = 200;
 
-        familybackground.forEach(workInterfere => {
+        workInterfere.forEach((person, j) => {
+            // geht jeden eintrag innerhalb eines workinterferes einmal durch...
 
             let dot = $('<div></div>');
-            dot.addClass("country");
+            dot.addClass("country"); // schlechter name, änder das mal hier und in deiner CSS :)
+            let color = 'rgb(115, 199, 240)';
+
+            if (person.familyHistory === "No") { // nur ein Beispiel
+                color = "red";
+            }
 
             dot.css({
-                'background-color': 'rgb(115, 199, 240)',
+                'background-color': color,
                 'height': rFam * 2,
                 'width': rFam * 2,
                 'left': xFam,
