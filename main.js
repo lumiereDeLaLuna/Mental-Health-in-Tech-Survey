@@ -9,7 +9,7 @@ $(function () {
     prepareData();
     drawFamilybackground();
     //drawMap();
-});
+})
 
 function prepareData() {
     data = gmynd.mergeData(infoData, positionData, "state");
@@ -28,11 +28,11 @@ function prepareData() {
     //cumulateFamiliybackground = gmynd.cumulateData(data, ["workInterfere", "treatment", "gender"]);
     //cumulateFamiliybackground = gmynd.sortData(cumulateFamiliybackground, "treatment");
     //console.log(cumulateFamiliybackground);
-};
+}
 
 function createDots() {
 
-};
+}
 
 function drawMap() {
 
@@ -64,7 +64,7 @@ function drawMap() {
         stage.append(dot);
 
     });
-};
+}
 
 function drawFamilybackground() {
     const keys = Object.keys(groupeFamilybackground);
@@ -127,4 +127,4 @@ function drawFamilybackground() {
         // }
         // i++;
     }
-};
+}
