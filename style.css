@@ -17,7 +17,14 @@ body {
 }
 
 .country {
-    background-color: white;
+    background-color: rgba(106, 170, 299, 0.8);
     position: absolute;
+    border-radius: 100%;
+}
+
+.familybackground {
+    background-color: rgb(115, 199, 240);
+    position: absolute;
+    box-sizing: border-box;
     border-radius: 100%;
 }

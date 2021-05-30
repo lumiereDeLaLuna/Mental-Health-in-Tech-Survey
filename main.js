@@ -7,28 +7,27 @@ $(function () {
     stageHeight = stage.innerHeight();
     stageWidth = stage.innerWidth();
     prepareData();
-    drawFamilyBackground();
     //drawMap();
+    drawFamilyBackground();
+    //drawAnnualRing();
 });
 
 function prepareData() {
     data = gmynd.mergeData(infoData, positionData, "state");
 
+    //für Map
     cumulateState = gmynd.cumulateData(data, "state");
     cumulateState = gmynd.mergeData(cumulateState, positionData, "state");
-    cumulateState = gmynd.deleteProps(cumulateState, "city")
+    cumulateState = gmynd.deleteProps(cumulateState, "city");
     //console.log(cumulateState)
 
-    groupeFamilyBackground = gmynd.groupData(data, ["workInterfere", "treatment", "gender"]);
+    //für FamilyBackground
     groupedByWork = gmynd.groupData(data, "workInterfere");
-    console.log(groupeFamilyBackground);
+    console.log(groupedByWork);
 
-    //groupeFamilyBackground = gmynd.sortData(groupeFamilyBackground, "treatment");
-    //console.log(groupeFamilyBackground);
+    //für AnnualRings
 
-    //cumulateFamiliybackground = gmynd.cumulateData(data, ["workInterfere", "treatment", "gender"]);
-    //cumulateFamiliybackground = gmynd.sortData(cumulateFamiliybackground, "treatment");
-    //console.log(cumulateFamiliybackground);
+
 }
 
 function createDots() {
@@ -52,7 +51,6 @@ function drawMap() {
         dot.addClass("country");
 
         dot.css({
-            'background-color': 'rgb(115, 199, 240)',
             'height': rMap * 2,
             'width': rMap * 2,
             'left': xMap,
@@ -78,21 +76,35 @@ function drawFamilyBackground() {
         //geht jedes workinterfere einmal durch....
 
         let workInterfere = groupedByWork[key];
-        // console.log(workInterfere);
+        //console.log(workInterfere);
 
-        const rFam = 10;
-        const xFam = 100 * i;
-        const yFam = 200;
+
 
         workInterfere.forEach((person, j) => {
             // geht jeden eintrag innerhalb eines workinterferes einmal durch...
 
-            let dot = $('<div></div>');
-            dot.addClass("country"); // schlechter name, änder das mal hier und in deiner CSS :)
-            let color = 'rgb(115, 199, 240)';
+            const rFam = 7;
+            //const xFam = 100 * i;
+            //const yFam = 200;
 
-            if (person.familyHistory === "No") { // nur ein Beispiel
-                color = "red";
+            let theta = 2.4 * j;
+            let spiralRadius = 7.75 * Math.sqrt(theta) * 0.75;
+            let xFam = 100 + Math.cos(theta) * spiralRadius + (i * 220);
+            let yFam = 150 + Math.sin(theta) * spiralRadius;
+
+
+            let dot = $('<div></div>');
+            dot.addClass("familybackground"); // schlechter name, änder das mal hier und in deiner CSS :)
+            let color = 'rgba(214, 235, 255, 0.8)';
+            let border, borderColor;
+
+            if (person.treatment === "No") { // Ohne Behandlung andere Farbe
+                color = 'rgba(106, 170, 229,0.8)';
+            }
+
+            if (person.familyHistory === "No") { // Ohne Familienhintergrund = Stroke
+                border = '3px solid'
+                //borderColor = color
             }
 
             dot.css({
@@ -101,39 +113,17 @@ function drawFamilyBackground() {
                 'width': rFam * 2,
                 'left': xFam,
                 'top': yFam,
+                'border': border,
+                //'border-color': borderColor
             });
             stage.append(dot);
 
         });
         i++;
-        // if (key == "Often") {
-        //     let dot = $('<div></div>');
-        //     dot.addClass("country");
 
-        //     dot.css({
-        //         'background-color': 'rgb(115, 199, 240)',
-        //         'height': rFam * 2,
-        //         'width': rFam * 2,
-        //         'left': xFam,
-        //         'top': yFam,
-        //     });
-        //     stage.append(dot);
-        // }
-
-        // if (key == "Rarely") {
-        //     console.log(i)
-        //     let dot = $('<div></div>');
-        //     dot.addClass("country");
-
-        //     dot.css({
-        //         'background-color': 'rgb(115, 199, 240)',
-        //         'height': rFam * 2,
-        //         'width': rFam * 2,
-        //         'left': xFam + 10,
-        //         'top': yFam,
-        //     });
-        //     stage.append(dot);
-        // }
-        // i++;
     }
+}
+
+function drawAnnualRing() {
+
 }
