@@ -18,7 +18,7 @@ function prepareData() {
     //für Map
     cumulateState = gmynd.cumulateData(data, "state");
     cumulateState = gmynd.mergeData(cumulateState, positionData, "state");
-    cumulateState = gmynd.deleteProps(cumulateState, "city");
+    //cumulateState = gmynd.deleteProps(cumulateState, "city");
     //console.log(cumulateState)
 
     //für FamilyBackground
@@ -37,7 +37,7 @@ function createDots() {
 function drawMap() {
 
     const extremStates = gmynd.dataExtremes(cumulateState, "count")
-    console.log(extremStates)
+    //console.log(extremStates)
 
     cumulateState.forEach(state => {
 
@@ -61,6 +61,18 @@ function drawMap() {
         dot.data(state);
 
         stage.append(dot);
+
+        dot.mouseover(() => {
+            dot.addClass("hover");
+            $('#hoverLabel').text('State : ' + state.city + ' , ' + 'Attendees : ' + state.count);
+
+        });
+
+        dot.mouseout(() => {
+            dot.removeClass("hover");
+            $('#hoverLabel').text("");
+        
+        });
 
     });
 }
@@ -117,6 +129,19 @@ function drawFamilyBackground() {
                 //'border-color': borderColor
             });
             stage.append(dot);
+
+            dot.mouseover(() => {
+                dot.addClass("hover");
+                $('#hoverLabel').text('Gender : ' + person.gender + ' , ' + 'Familybackground : ' + person.familyHistory + ' , ' + 'Treatment : ' + person.treatment + ' , ' + 'Work interfere : ' + person.workInterfere);
+    
+            });
+    
+            dot.mouseout(() => {
+                dot.removeClass("hover");
+                $('#hoverLabel').text("");
+            
+            });
+    
 
         });
         i++;

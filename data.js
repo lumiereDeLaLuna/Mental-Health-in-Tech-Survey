@@ -10012,8 +10012,8 @@ let positionData =
     },
     {
       "state": "WA",
-      "latitude": 38.8993487,
-      "longitude": -77.0145665,
+      "latitude": 47.751076,
+      "longitude": -120.740135,
       "city": "Washington"
     },
     {

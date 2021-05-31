@@ -6,14 +6,21 @@ body {
     margin: 0;
     background-color: #222222;
     color: white;
-    font-family: 'Fira Sans', 'Comic Sans MS', sans-serif;
+    font-family: 'Helvetica Neue';
 }
 
-#stage {
+#stage, #hoverLabel, #clickLabel {
     background-color: #121212;
     width: 600px;
-    height: 300px;
 
+}
+#stage {
+    height: 300px;
+}
+
+#hoverLabel, #clickLabel {
+    margin-top: 5px;
+    height: 20px;
 }
 
 .country {
@@ -27,4 +34,8 @@ body {
     position: absolute;
     box-sizing: border-box;
     border-radius: 100%;
+}
+
+.hover {
+    background-color: rgba(247, 96, 200, 0.8);
 }
