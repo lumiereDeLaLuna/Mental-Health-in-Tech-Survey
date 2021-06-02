@@ -8,8 +8,8 @@ $(function () {
     stageWidth = stage.innerWidth();
     prepareData();
     //drawMap();
-    drawFamilyBackground();
-    //drawAnnualRing();
+    //drawFamilyBackground();
+    drawAnnualRing();
 });
 
 function prepareData() {
@@ -23,10 +23,11 @@ function prepareData() {
 
     //für FamilyBackground
     groupedByWork = gmynd.groupData(data, "workInterfere");
-    console.log(groupedByWork);
+    //console.log(groupedByWork);
 
     //für AnnualRings
-
+    groupedByAge = gmynd.groupData(data, "age");
+    console.log(groupedByAge);
 
 }
 
@@ -71,7 +72,7 @@ function drawMap() {
         dot.mouseout(() => {
             dot.removeClass("hover");
             $('#hoverLabel').text("");
-        
+
         });
 
     });
@@ -91,7 +92,6 @@ function drawFamilyBackground() {
         //console.log(workInterfere);
 
 
-
         workInterfere.forEach((person, j) => {
             // geht jeden eintrag innerhalb eines workinterferes einmal durch...
 
@@ -102,21 +102,22 @@ function drawFamilyBackground() {
             let theta = 2.4 * j;
             let spiralRadius = 7.75 * Math.sqrt(theta) * 0.75;
             let xFam = 100 + Math.cos(theta) * spiralRadius + (i * 220);
-            let yFam = 150 + Math.sin(theta) * spiralRadius;
+            let yOffset = i % 2 * 200;
+            let yFam = 150 + Math.sin(theta) * spiralRadius + yOffset;
 
 
             let dot = $('<div></div>');
             dot.addClass("familybackground"); // schlechter name, änder das mal hier und in deiner CSS :)
+            let border;
             let color = 'rgba(214, 235, 255, 0.8)';
-            let border, borderColor;
 
             if (person.treatment === "No") { // Ohne Behandlung andere Farbe
-                color = 'rgba(106, 170, 229,0.8)';
+                color = 'rgba(106, 170, 229, 0.8)';
             }
 
             if (person.familyHistory === "No") { // Ohne Familienhintergrund = Stroke
-                border = '3px solid'
-                //borderColor = color
+                border = '3px solid ' + color;
+                color = '#121212';
             }
 
             dot.css({
@@ -125,23 +126,22 @@ function drawFamilyBackground() {
                 'width': rFam * 2,
                 'left': xFam,
                 'top': yFam,
-                'border': border,
-                //'border-color': borderColor
+                'border': border
             });
             stage.append(dot);
 
             dot.mouseover(() => {
                 dot.addClass("hover");
                 $('#hoverLabel').text('Gender : ' + person.gender + ' , ' + 'Familybackground : ' + person.familyHistory + ' , ' + 'Treatment : ' + person.treatment + ' , ' + 'Work interfere : ' + person.workInterfere);
-    
+
             });
-    
+
             dot.mouseout(() => {
                 dot.removeClass("hover");
                 $('#hoverLabel').text("");
-            
+
             });
-    
+
 
         });
         i++;
@@ -151,4 +151,58 @@ function drawFamilyBackground() {
 
 function drawAnnualRing() {
 
+    const dotSizeAge = 5;
+    const rRing = 1;
+    let i = 0;
+
+    for (let key in groupedByAge) {
+        //geht jede Altersgruppe einmal durch....
+
+        let ageGroup = groupedByAge[key];
+        //console.log(ageGroup);
+
+        const ringNumber = i;
+
+        const angle = 360 / ageGroup.length;    //rechnet 360° / alle Personen Innerhalb einer Altersgruppe
+        const rad = gmynd.radians(angle);       //umrechnung von Winkel in Bogenmaß (von deg in rad) 
+        const radiusRing = (ringNumber + ageGroup.length)*4;
+        //console.log(radiusRing)
+         
+        const radius = key;
+        
+
+        ageGroup.forEach((person, j) => {
+            // geht jeden eintrag innerhalb einer Altersgruppe einmal durch...
+    
+            const xAge = 200 + (Math.cos(rad) * radius *j);
+            const yAge = 200 + (Math.sin(rad) * radius*j);
+
+            let dot = $('<div></div>');
+            dot.addClass("ageGroup");
+            
+            dot.css({
+                //'background-color': color,
+                'height': dotSizeAge * 2,
+                'width': dotSizeAge * 2,
+                'left': xAge,
+                'top': yAge,
+            });
+            stage.append(dot);
+
+            dot.mouseover(() => {
+                dot.addClass("hover");
+                $('#hoverLabel').text('Age : ' + person.age);
+
+            });
+
+            dot.mouseout(() => {
+                dot.removeClass("hover");
+                $('#hoverLabel').text("");
+
+            });
+
+
+        });
+        i++;
+    }
 }

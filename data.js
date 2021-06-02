@@ -3070,7 +3070,7 @@ let infoData =
   },
   {
     "timestamp": "2014-08-27 15:05:21",
-    "age": 329,
+    "age": 29,
     "gender": "male",
     "state": "OH",
     "familyHistory": "No",
