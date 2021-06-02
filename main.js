@@ -107,7 +107,7 @@ function drawFamilyBackground() {
 
 
             let dot = $('<div></div>');
-            dot.addClass("familybackground"); // schlechter name, änder das mal hier und in deiner CSS :)
+            dot.addClass("familybackground");
             let border;
             let color = 'rgba(214, 235, 255, 0.8)';
 
@@ -179,9 +179,35 @@ function drawAnnualRing() {
 
             let dot = $('<div></div>');
             dot.addClass("ageGroup");
+
+            let color = 'rgba(115, 199, 240, 0.8)';
+
+            if (person.coworkers === "Some of them" && person.supervisor === "Yes") { 
+                color = 'rgba(92, 226, 182, 0.8)';
+            }
+            if (person.coworkers === "No" && person.supervisor === "Yes") { 
+                color = 'rgba(230, 235, 89, 0.8)';
+            }
+            if (person.coworkers === "Yes" && person.supervisor === "Some of them") { 
+                color = 'rgba(82, 165, 255, 0.8)';
+            }
+            if (person.coworkers === "Some of them" && person.supervisor === "Some of them") { 
+                color = 'rgba(196, 196, 192, 0.8)';
+            }
+            if (person.coworkers === "Yes" && person.supervisor === "No") { 
+                color = 'rgba(153, 110, 244, 0.8)';
+            }
+            if (person.coworkers === "Some of them" && person.supervisor === "No") { 
+                color = 'rgba(247, 100, 166, 0.8)';
+            }
+            if (person.coworkers === "No" && person.supervisor === "No") { 
+                color = 'rgba(245, 110, 76, 0.8)';
+            }
+
+
             
             dot.css({
-                //'background-color': color,
+                'background-color': color,
                 'height': dotSizeAge * 2,
                 'width': dotSizeAge * 2,
                 'left': xAge,
@@ -191,7 +217,7 @@ function drawAnnualRing() {
 
             dot.mouseover(() => {
                 dot.addClass("hover");
-                $('#hoverLabel').text('Age : ' + person.age);
+                $('#hoverLabel').text('Age : ' + person.age+ ' , ' + 'Coworkers : ' + person.coworkers + ' , ' + 'Supervisor : ' + person.supervisor );
 
             });
 
