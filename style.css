@@ -1,26 +1,109 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+position: absolute;
+width: 600px;
+height: 103px;
+left: 69px;
+top: 72px;
+
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 39.06px;
+line-height: 51px;
+
+color: rgba(255, 255, 255, 0.8);
 }
 
 body {
-    margin: 0;
     background-color: #222222;
     color: white;
-    font-family: 'Helvetica Neue';
+    font-family: Avenir Next, Montserrat, sans-serif;
 }
 
-#stage, #hoverLabel, #clickLabel {
-    background-color: #121212;
-    width: 600px;
-
-}
 #stage {
-    height: 300px;
+    background-color: #121212;
+    width: 1440px;
+    height: 1024px;
+
 }
 
-#hoverLabel, #clickLabel {
+#hoverLabel {
+    position: absolute;
+    background-color: #121212;
+    width: 204px;
+    height: 128px;
+    top: 842px;
+    left: 72px;
     margin-top: 5px;
-    height: 20px;
+}
+
+.button{
+    position: absolute;
+    background-color: #121212;
+    color: white;
+    border: none;
+    font-size: 25px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.where {
+    top: 123px;
+    left: 72px;
+    color: #73C7F0;
+}
+.interfere {
+    top: 123px;
+    left: 176px;
+    color: #D6EBFF;
+}
+.talkAbout {
+    top: 123px;
+    left: 288px;
+    color: #996EF4;
+}
+.consequences {
+    top: 344px;
+    left: 72px;
+    color: rgba(255, 255, 255, 0.38);
+}
+.yesCon {
+    top: 384px;
+    left: 72px;
+    color: rgba(255, 255, 255, 0.87);
+}
+.maybeCon {
+    top: 384px;
+    left: 136px;
+    color: rgba(255, 255, 255, 0.87);
+}
+.noCon {
+    top: 384px;
+    left: 241px;
+    color: rgba(255, 255, 255, 0.87);
+}
+.gender {
+    top: 544px;
+    left: 72px;
+    color: rgba(255, 255, 255, 0.38);
+}
+.femaleCon {
+    top: 584px;
+    left: 72px;
+    color: rgba(255, 255, 255, 0.87);
+}
+.maleCon {
+    top: 584px;
+    left: 184px;
+    color: rgba(255, 255, 255, 0.87);
+}
+.talkTo {
+    top: 744px;
+    left: 72px;
+    color: rgba(255, 255, 255, 0.38);
 }
 
 .country {

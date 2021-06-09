@@ -9348,19 +9348,6 @@ let infoData =
     "supervisor": "No"
   },
   {
-    "timestamp": "2014-10-02 21:25:16",
-    "age": 72,
-    "gender": "female",
-    "state": "IN",
-    "familyHistory": "Yes",
-    "treatment": "Yes",
-    "workInterfere": "Never",
-    "mentalHealthConsequence": "Maybe",
-    "physHealthConsequence": "Maybe",
-    "coworkers": "Some of them",
-    "supervisor": "Yes"
-  },
-  {
     "timestamp": "2014-10-05 21:16:10",
     "age": 35,
     "gender": "female",
