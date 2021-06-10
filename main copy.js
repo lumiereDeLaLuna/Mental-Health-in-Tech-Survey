@@ -260,3 +260,24 @@ interfereLeft: xFam,
   stage.append(dot);
   
 }
+
+function create() {
+  const dotRadius = 4;
+    const radiusPerRing = 12;
+    const centerPoint = {
+      x: (stageWidth / 2),
+      y: stageHeight / 2
+    }
+
+  data.forEach (person => {
+    
+    const ringNumber = parseInt(person) - 18;
+    const ageGroup = groupedByAge[person];
+    const dotsInAgeGroup = ageGroup.length;
+    const anglePerDot = gmynd.radians(360 / dotsInAgeGroup);
+    const ringRadius = (ringNumber + 4) * radiusPerRing;
+    const angleOffset = Math.random()*100;
+
+
+  })
+}

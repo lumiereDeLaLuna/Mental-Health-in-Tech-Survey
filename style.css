@@ -19,9 +19,30 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 body {
-    background-color: #222222;
+    background-color: #121212;
     color: white;
-    font-family: Avenir Next, Montserrat, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.talk-to{
+    position: absolute;
+    width: 350px;
+    height: 26px;
+    left: 72px;
+    top: 747px;
+    color: white;
+    opacity: 0.38;
+}
+
+span.coworkers{
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    color: #6AAAE5;
+}
+span.supervisor{
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    color: #D6EBFF;
 }
 
 #stage {
@@ -65,6 +86,18 @@ body {
     left: 288px;
     color: #996EF4;
 }
+
+
+.cons-yes{
+    position: absolute;
+}
+.cons-no{
+    position: absolute;
+}.cons-maybe{
+    position: absolute;
+}
+
+
 .consequences {
     top: 344px;
     left: 72px;
@@ -85,6 +118,16 @@ body {
     left: 241px;
     color: rgba(255, 255, 255, 0.87);
 }
+
+
+.gender-female {
+    position: absolute;
+}
+.gender-male {
+    position: absolute;
+}
+
+
 .gender {
     top: 544px;
     left: 72px;

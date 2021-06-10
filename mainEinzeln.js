@@ -156,17 +156,14 @@ function drawAnnualRing() {
     const ageGroup = groupedByAge[key];
     const dotsInAgeGroup = ageGroup.length;
     const anglePerDot = gmynd.radians(360 / dotsInAgeGroup);
-    const ringRadius = (ringNumber + 4) * radiusPerRing;
-
+    const ringRadius = (ringNumber + 1) * radiusPerRing;
+    const angleOffset = Math.random()*100;
     //console.log(ageGroup)
-    //let maxAge = gmynd.dataMax(ageGroup , ageGroup.length);
-    //console.log(maxAge)
-    const angleMax = gmynd.radians(360 / 52);
 
     ageGroup.forEach((person, j) => {
       // geht jeden eintrag innerhalb einer Altersgruppe einmal durch...
-      let angle = j * angleMax;
-      const xAge = centerPoint.x + (Math.cos(angle) * ringRadius);
+      let angle = j * anglePerDot + angleOffset;
+      const xAge = (centerPoint.x + 120) + (Math.cos(angle) * ringRadius);
       const yAge = centerPoint.y + (Math.sin(angle) * ringRadius);
 
       let dot = $('<div></div>');
@@ -196,6 +193,23 @@ function drawAnnualRing() {
         color = 'rgba(245, 110, 76, 0.8)';
       }
 
+      //für die butten
+      if (person.mentalHealthConsequence === "Yes") {
+        dot.addClass("cons-yes");
+      }
+      if (person.mentalHealthConsequence === "No") {
+        dot.addClass("cons-no");
+      }
+      if (person.mentalHealthConsequence === "Maybe") {
+        dot.addClass("cons-maybe");
+      }
+      if (person.gender === "female") {
+        dot.addClass("gender-female");
+      } else {
+        dot.addClass("gender-male")
+      }
+
+
       dot.css({
         'background-color': color,
         'height': dotRadius * 2,
@@ -219,6 +233,139 @@ function drawAnnualRing() {
         }); 
     });
   }
+}
+
+//dots sollen bei klick auf den butten unterschiedliche Opacity bekommen
+//consequences
+function consequencesTalkAboutView(){
+  $('.cons-yes').css({
+    'opacity': '0.9'
+  });
+  $('.cons-maybe').css({
+    'opacity': '0.9'
+  });
+  $('.cons-no').css({
+    'opacity': '0.9'
+  });
+
+  $('.yesCon').css({
+    'opacity': '0.9'
+  });
+  $('.maybeCon').css({
+    'opacity': '0.9'
+  });
+  $('.noCon').css({
+    'opacity': '0.9'
+  });
+}
+function yesTalkAboutView() {
+  $('.cons-yes').css({
+    'opacity': '0.9'
+  });
+  $('.cons-maybe').css({
+    'opacity': '0.1'
+  });
+  $('.cons-no').css({
+    'opacity': '0.1'
+  });
+
+  $('.yesCon').css({
+    'opacity': '0.9'
+  });
+  $('.maybeCon').css({
+    'opacity': '0.37'
+  });
+  $('.noCon').css({
+    'opacity': '0.37'
+  });
+}
+function maybeTalkAboutView() {
+  $('.cons-yes').css({
+    'opacity': '0.1'
+  });
+  $('.cons-maybe').css({
+    'opacity': '0.9'
+  });
+  $('.cons-no').css({
+    'opacity': '0.1'
+  });
+  $('.yesCon').css({
+    'opacity': '0.37'
+  });
+  $('.maybeCon').css({
+    'opacity': '0.9'
+  });
+  $('.noCon').css({
+    'opacity': '0.37'
+  });
+}
+function noTalkAboutView() {
+  $('.cons-yes').css({
+    'opacity': '0.1'
+  });
+  $('.cons-maybe').css({
+    'opacity': '0.1'
+  });
+  $('.cons-no').css({
+    'opacity': '0.9'
+  });
+
+  $('.yesCon').css({
+    'opacity': '0.37'
+  });
+  $('.maybeCon').css({
+    'opacity': '0.37'
+  });
+  $('.noCon').css({
+    'opacity': '0.9'
+  });
+}
+
+//gender
+function genderTalkAboutView() {
+  $('.gender-female').css({
+    'opacity': '0.9'
+  });
+  $('.gender-male').css({
+    'opacity': '0.9'
+  });
+
+  $('.femaleCon').css({
+    'opacity': '0.9'
+  });
+  $('.maleCon').css({
+    'opacity': '0.9'
+  });
+}
+function femaleTalkAboutView() {
+  $('.gender-female').css({
+    'opacity': '0.9'
+  });
+  $('.gender-male').css({
+    'opacity': '0.1'
+  });
+
+  $('.femaleCon').css({
+    'opacity': '0.9'
+  });
+  $('.maleCon').css({
+    'opacity': '0.37'
+  });
+}
+function maleTalkAboutView() {
+  $('.gender-female').css({
+    'opacity': '0.1'
+  });
+  $('.gender-male').css({
+    'opacity': '0.9'
+  });
+
+  $('.femaleCon').css({
+    'opacity': '0.37'
+  });
+  $('.maleCon').css({
+    'opacity': '0.9'
+  });
 }
 
 // function createDots() {
