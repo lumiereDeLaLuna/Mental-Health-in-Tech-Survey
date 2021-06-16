@@ -45,6 +45,83 @@ span.supervisor{
     color: #D6EBFF;
 }
 
+.coworkers-yes{
+    position: absolute;
+    width: 64px;
+    height: 33px;
+    left: 152px;
+    top: 784px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #6AAAE5;
+    opacity: 0.9;
+}
+.coworkers-some{
+    position: absolute;
+    width: 69px;
+    height: 33px;
+    left: 213px;
+    top: 784px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #6AAAE5;
+    opacity: 0.9;
+}
+.coworkers-no{
+    position: absolute;
+    width: 64px;
+    height: 33px;
+    left: 280px;
+    top: 784px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #6AAAE5;
+    opacity: 0.9;
+}
+.supervisor-yes{
+    position: absolute;
+    width: 41px;
+    height: 33px;
+    left: 72px;
+    top: 824px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    color: #D6EBFF;
+    opacity: 0.9;
+}
+.supervisor-some{
+    position: absolute;
+    width: 65px;
+    height: 33px;
+    left: 72px;
+    top: 872px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    color: #D6EBFF;
+    opacity: 0.9;
+}
+.supervisor-no{
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    left: 72px;
+    top: 920px;
+
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    color: #D6EBFF;
+    opacity: 0.9;
+}
+
 #stage {
     background-color: #121212;
     width: 1440px;
@@ -54,7 +131,6 @@ span.supervisor{
 
 #hoverLabel {
     position: absolute;
-    background-color: #121212;
     width: 204px;
     height: 128px;
     top: 842px;
@@ -147,6 +223,106 @@ span.supervisor{
     top: 744px;
     left: 72px;
     color: rgba(255, 255, 255, 0.38);
+}
+
+.yes-yes{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 168px;
+    top: 824px;
+
+    border-radius: 50%;
+    background: #77CDF7;
+    opacity: 0.9;
+}
+.some-yes{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 232px;
+    top: 824px;
+
+    border-radius: 50%;
+    background: #5CE2B6;
+    opacity: 0.9;
+}
+.no-yes{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 296px;
+    top: 824px;
+
+    border-radius: 50%;
+    background: #E6EB59;
+    opacity: 0.9;
+}
+.yes-some{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 168px;
+    top: 872px;
+
+    border-radius: 50%;
+    background: #52A5FF;
+    opacity: 0.9;
+}
+.some-some{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 232px;
+    top: 872px;
+
+    border-radius: 50%;
+    background: #C4C4C0;
+    opacity: 0.9;
+}
+.no-some{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 296px;
+    top: 872px;
+
+    border-radius: 50%;
+    background: #FCB055;
+    opacity: 0.9;
+}
+.yes-no{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 168px;
+    top: 920px;
+
+    border-radius: 50%;
+    background: #996EF4;
+    opacity: 0.9;
+}
+.some-no{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 232px;
+    top: 920px;
+
+    border-radius: 50%;
+    background: #F764A6;
+    opacity: 0.9;
+}
+.no-no{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 296px;
+    top: 920px;
+
+    border-radius: 50%;
+    background: #F56E4C;
+    opacity: 0.9;
 }
 
 .country {
