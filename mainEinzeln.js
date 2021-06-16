@@ -30,6 +30,7 @@ function prepareData() {
   console.log(groupedByWork);
 
   //für AnnualRings
+  groupedByAge = gmynd.sortData(data, ["supervisor", "coworkers"])
   groupedByAge = gmynd.groupData(data, "age");
   //console.log(groupedByAge);
 
