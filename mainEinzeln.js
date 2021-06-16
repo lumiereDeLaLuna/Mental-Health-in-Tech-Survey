@@ -152,13 +152,13 @@ function drawAnnualRing() {
   }
 
   for (let key in groupedByAge) {
-  
+
     const ringNumber = parseInt(key) - 18;
     const ageGroup = groupedByAge[key];
     const dotsInAgeGroup = ageGroup.length;
     const anglePerDot = gmynd.radians(360 / dotsInAgeGroup);
     const ringRadius = (ringNumber + 1) * radiusPerRing;
-    const angleOffset = Math.random()*100;
+    const angleOffset = Math.random() * 100;
     //console.log(ageGroup)
 
     ageGroup.forEach((person, j) => {
@@ -170,28 +170,43 @@ function drawAnnualRing() {
       let dot = $('<div></div>');
       dot.addClass("ageGroup");
 
-      let color = 'rgba(115, 199, 240, 0.8)';
+      let color = 'rgba(255, 255, 255, 0,87)';
 
+      if (person.coworkers === "Yes" && person.supervisor === "Yes") {
+        color = 'rgba(115, 199, 240, 0.8)';
+        dot.addClass("yes-yes");
+      }
       if (person.coworkers === "Some of them" && person.supervisor === "Yes") {
         color = 'rgba(92, 226, 182, 0.8)';
+        dot.addClass("some-yes");
       }
       else if (person.coworkers === "No" && person.supervisor === "Yes") {
         color = 'rgba(230, 235, 89, 0.8)';
+        dot.addClass("no-yes");
       }
       else if (person.coworkers === "Yes" && person.supervisor === "Some of them") {
         color = 'rgba(82, 165, 255, 0.8)';
+        dot.addClass("yes-some");
       }
       else if (person.coworkers === "Some of them" && person.supervisor === "Some of them") {
         color = 'rgba(196, 196, 192, 0.8)';
+        dot.addClass("some-some");
+      }
+      else if (person.coworkers === "No" && person.supervisor === "Some of them") {
+        color = 'rgba(252, 176, 85, 0.8)';
+        dot.addClass("no-some");
       }
       else if (person.coworkers === "Yes" && person.supervisor === "No") {
         color = 'rgba(153, 110, 244, 0.8)';
+        dot.addClass("yes-no");
       }
       else if (person.coworkers === "Some of them" && person.supervisor === "No") {
         color = 'rgba(247, 100, 166, 0.8)';
+        dot.addClass("some-no");
       }
       else if (person.coworkers === "No" && person.supervisor === "No") {
         color = 'rgba(245, 110, 76, 0.8)';
+        dot.addClass("no-no");
       }
 
       //für die butten
@@ -221,24 +236,38 @@ function drawAnnualRing() {
 
       stage.append(dot);
 
+      // dot.mouseover(() => {
+      //   dot.addClass("hover");
+      //   $('#hoverLabel').text('Age : ' + person.age + ' , ' + 'Coworkers : ' + person.coworkers + ' , ' + 'Supervisor : ' + person.supervisor);
 
-         dot.mouseover(() => {
-          dot.addClass("hover");
-          $('#hoverLabel').text('Age : ' + person.age + ' , ' + 'Coworkers : ' + person.coworkers + ' , ' + 'Supervisor : ' + person.supervisor);
-  
-        });
-  
-        dot.mouseout(() => {
-          dot.removeClass("hover");
-          $('#hoverLabel').text("");
-        }); 
+      // });
+
+      // dot.mouseout(() => {
+      //   dot.removeClass("hover");
+      //   $('#hoverLabel').text("");
+      // });
     });
   }
 }
 
+let classFilters= {
+  gender: ".femaleCon",
+  consequences: ".yesCon",
+  speaking: "*"
+};
+
+//classFilters.gender=".male";
+
+//$(classFilters.gender).find(classFilters.consequences).find(classFilters.speaking).css //mach intransaprent
+// function yesTalkAboutView() {
+//   $(classFilters.gender).find(classFilters.consequences).find(classFilters.speaking).css({
+//     'color' : 'yellow'
+//   }) //mach intransaprent
+
+// }
 //dots sollen bei klick auf den butten unterschiedliche Opacity bekommen
 //consequences
-function consequencesTalkAboutView(){
+function consequencesTalkAboutView() {
   $('.cons-yes').css({
     'opacity': '0.9'
   });
@@ -369,6 +398,298 @@ function maleTalkAboutView() {
   });
 }
 
+//coworkers-supervisor
+function yesYes() {
+  $('.yes-yes').css({
+    'opacity': '0.9'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function someYes() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.9'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function noYes() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.9'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function noYes() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.9'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function yesSome() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.9'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function someSome() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.9'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function noSome() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.9'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function yesNo() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.9'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function someNo() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.9'
+  });
+  $('.no-no').css({
+    'opacity': '0.1'
+  });
+}
+function noNo() {
+  $('.yes-yes').css({
+    'opacity': '0.1'
+  });
+  $('.some-yes').css({
+    'opacity': '0.1'
+  });
+  $('.no-yes').css({
+    'opacity': '0.1'
+  });
+  $('.yes-some').css({
+    'opacity': '0.1'
+  });
+  $('.some-some').css({
+    'opacity': '0.1'
+  });
+  $('.no-some').css({
+    'opacity': '0.1'
+  });
+  $('.yes-no').css({
+    'opacity': '0.1'
+  });
+  $('.some-no').css({
+    'opacity': '0.1'
+  });
+  $('.no-no').css({
+    'opacity': '0.9'
+  });
+}
+
 // function createDots() {
 //   const dotRadius = 4;
 //   const radiusPerRing = 12;
@@ -438,9 +759,9 @@ function maleTalkAboutView() {
 //       /*   dot.mouseover(() => {
 //           dot.addClass("hover");
 //           $('#hoverLabel').text('Age : ' + person.age + ' , ' + 'Coworkers : ' + person.coworkers + ' , ' + 'Supervisor : ' + person.supervisor);
-  
+
 //         });
-  
+
 //         dot.mouseout(() => {
 //           dot.removeClass("hover");
 //           $('#hoverLabel').text("");
@@ -504,13 +825,13 @@ function maleTalkAboutView() {
 //             dot.mouseover(() => {
 //               dot.addClass("hover");
 //               $('#hoverLabel').text('Gender : ' + person.gender +  (' , ')  + 'Familybackground : ' + person.familyHistory + ' , ' + 'Treatment : ' + person.treatment + ' , ' + 'Work interfere : ' + person.workInterfere);
-      
+
 //             });
-      
+
 //             dot.mouseout(() => {
 //               dot.removeClass("hover");
 //               $('#hoverLabel').text("");
-      
+
 //             }); */
 
 

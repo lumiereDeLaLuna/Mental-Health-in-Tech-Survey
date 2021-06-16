@@ -133,7 +133,7 @@ span.supervisor{
     position: absolute;
     width: 204px;
     height: 128px;
-    top: 842px;
+    top: 192px;
     left: 72px;
     margin-top: 5px;
 }
@@ -169,7 +169,8 @@ span.supervisor{
 }
 .cons-no{
     position: absolute;
-}.cons-maybe{
+}
+.cons-maybe{
     position: absolute;
 }
 
