@@ -10,7 +10,7 @@ $(function () {
   createDots();
   //drawMap();
   //drawFamilyBackground();
-  
+
   drawAnnualRing();
 
 });
@@ -83,30 +83,30 @@ function drawFamilyBackground() {
     const keyCount = keys.length;
     console.log(keys)*/
 
-    $('.circle-blub').each(function() {
-      let dotData = $(this).data();
-        dot.css({
-          'background-color': dotData.ageColor,
-          'height': dotData.ageHeight,
-          'width': dotData.ageWidth,
-          'left': dotData.ageLeft,
-          'top': dotData.ageTop
-        }); 
-      });
-  
+  $('.circle-blub').each(function () {
+    let dotData = $(this).data();
+    dot.css({
+      'background-color': dotData.ageColor,
+      'height': dotData.ageHeight,
+      'width': dotData.ageWidth,
+      'left': dotData.ageLeft,
+      'top': dotData.ageTop
+    });
+  });
+
 }
 
 function drawAnnualRing() {
-  $('.circle-blub').each(function() {
+  $('.circle-blub').each(function () {
     let dotData = $(this).data();
-      $(this).css({
-        'background-color': dotData.ageColor,
-        'height': dotData.ageHeight,
-        'width': dotData.ageWidth,
-        'left': dotData.ageLeft,
-        'top': dotData.ageTop
-      }); 
+    $(this).css({
+      'background-color': dotData.ageColor,
+      'height': dotData.ageHeight,
+      'width': dotData.ageWidth,
+      'left': dotData.ageLeft,
+      'top': dotData.ageTop
     });
+  });
 }
 
 function createDots() {
@@ -116,147 +116,77 @@ function createDots() {
     x: (stageWidth / 2),
     y: stageHeight / 2
   }
-
-dot.addClass("circle-blub"); // gepflogenheit in css wäre "age-group", aber das ist im grunde egal
+  for (let key in groupedByWork) {
+    //dieses object verwenden wir nur noch zum zählen
+    groupedByWork[key] = 0;
+  }
+  let workKeys = Object.keys(groupedByWork);
 
   for (let key in groupedByAge) {
-    let dot;
-dot = $('<div></div>');
+    let dot = $('<div></div>');
+    dot.addClass("circle-blub");
     const ringNumber = parseInt(key) - 18;
     const ageGroup = groupedByAge[key];
     const dotsInAgeGroup = ageGroup.length;
     const anglePerDot = gmynd.radians(360 / dotsInAgeGroup);
     const ringRadius = (ringNumber + 4) * radiusPerRing;
-    const angleOffset = Math.random()*100;
-    //console.log(ageGroup)
-
+    const angleOffset = Math.random() * 100;
     ageGroup.forEach((person, j) => {
-      // geht jeden eintrag innerhalb einer Altersgruppe einmal durch...
       let angle = j * anglePerDot + angleOffset;
       const xAge = centerPoint.x + (Math.cos(angle) * ringRadius);
       const yAge = centerPoint.y + (Math.sin(angle) * ringRadius);
 
       let color = 'rgba(115, 199, 240, 0.8)';
-
       if (person.coworkers === "Some of them" && person.supervisor === "Yes") {
         color = 'rgba(92, 226, 182, 0.8)';
-      }
-      else if (person.coworkers === "No" && person.supervisor === "Yes") {
+      } else if (person.coworkers === "No" && person.supervisor === "Yes") {
         color = 'rgba(230, 235, 89, 0.8)';
-      }
-      else if (person.coworkers === "Yes" && person.supervisor === "Some of them") {
+      } else if (person.coworkers === "Yes" && person.supervisor === "Some of them") {
         color = 'rgba(82, 165, 255, 0.8)';
-      }
-      else if (person.coworkers === "Some of them" && person.supervisor === "Some of them") {
+      } else if (person.coworkers === "Some of them" && person.supervisor === "Some of them") {
         color = 'rgba(196, 196, 192, 0.8)';
-      }
-      else  if (person.coworkers === "Yes" && person.supervisor === "No") {
+      } else if (person.coworkers === "Yes" && person.supervisor === "No") {
         color = 'rgba(153, 110, 244, 0.8)';
-      }
-      else if (person.coworkers === "Some of them" && person.supervisor === "No") {
+      } else if (person.coworkers === "Some of them" && person.supervisor === "No") {
         color = 'rgba(247, 100, 166, 0.8)';
-      }
-      else if (person.coworkers === "No" && person.supervisor === "No") {
+      } else if (person.coworkers === "No" && person.supervisor === "No") {
         color = 'rgba(245, 110, 76, 0.8)';
       }
 
-  
+      let currentInterfere = person.workInterfere;
+      let keyNumber = workKeys.indexOf(currentInterfere);
+      const rFam = 7;
+      let theta = 2.4 * groupedByWork[currentInterfere];
+      let spiralRadius = 7.75 * Math.sqrt(theta) * 0.75;
+      let xFam = 350 + Math.cos(theta) * spiralRadius + (keyNumber * 220);
+      let yOffset = keyNumber % 2 * 400;
+      let yFam = 320 + Math.sin(theta) * spiralRadius + yOffset;
+
+      let border;
+      let workColor = 'rgba(214, 235, 255, 0.8)';
+
+      if (person.treatment === "No") { // Ohne Behandlung andere Farbe
+        workColor = 'rgba(106, 170, 229, 0.8)';
+      }
+      if (person.familyHistory === "No") { // Ohne Familienhintergrund = Stroke
+        border = '3px solid ' + workColor;
+        workColor = '#121212';
+      }
+      groupedByWork[currentInterfere]++;
 
       dot.data({
         ageColor: color,
         ageHeight: dotRadius * 2,
-        ageWidth:dotRadius * 2,
-        ageLeft:xAge,
-        ageTop: yAge
+        ageWidth: dotRadius * 2,
+        ageLeft: xAge,
+        ageTop: yAge,
+        interfereColor: workColor,
+        interfereHeight: rFam * 2,
+        interfereWidth: rFam * 2,
+        interfereBorder: border,
+        interfereTop: yFam,
+        interfereLeft: xFam,
       });
-
-   
-
-    /*   dot.mouseover(() => {
-        dot.addClass("hover");
-        $('#hoverLabel').text('Age : ' + person.age + ' , ' + 'Coworkers : ' + person.coworkers + ' , ' + 'Supervisor : ' + person.supervisor);
-
-      });
-
-      dot.mouseout(() => {
-        dot.removeClass("hover");
-        $('#hoverLabel').text("");
-      }); */
     });
   }
-
-    let i = 0;
-  for (let key in groupedByWork) {
-    //geht jedes workinterfere einmal durch....
-
-    let workInterfere = groupedByWork[key];
-    //console.log(workInterfere);
-
-
-    workInterfere.forEach((person, j) => {
-      // geht jeden eintrag innerhalb eines workinterferes einmal durch...
-
-      const rFam = 7;
-      //const xFam = 100 * i;
-      //const yFam = 200;
-
-      let theta = 2.4 * j;
-      let spiralRadius = 7.75 * Math.sqrt(theta) * 0.75;
-      let xFam = 350 + Math.cos(theta) * spiralRadius + (i * 220);
-      let yOffset = i % 2 * 400;
-      let yFam = 320 + Math.sin(theta) * spiralRadius + yOffset;
-
-
-/*       let dot = $('<div></div>');
-      dot.addClass("familybackground");
- */      let border;
-      let color = 'rgba(214, 235, 255, 0.8)';
-
-      if (person.treatment === "No") { // Ohne Behandlung andere Farbe
-        color = 'rgba(106, 170, 229, 0.8)';
-      }
-
-      if (person.familyHistory === "No") { // Ohne Familienhintergrund = Stroke
-        border = '3px solid ' + color;
-        color = '#121212';
-      }
-dot.data({
-interfereColor: color,
-interfereHeight: rFam * 2,
-interfereWidth: rFam * 2,
-interfereBorder: border,
-interfereTop: yFam,
-interfereLeft: xFam,
-
-});
-/*       dot.css({
-        'background-color': color,
-        'height': rFam * 2,
-        'width': rFam * 2,
-        'left': xFam,
-        'top': yFam,
-        'border': border
-      }); */
-/* 
-      dot.mouseover(() => {
-        dot.addClass("hover");
-        $('#hoverLabel').text('Gender : ' + person.gender +  (' , ')  + 'Familybackground : ' + person.familyHistory + ' , ' + 'Treatment : ' + person.treatment + ' , ' + 'Work interfere : ' + person.workInterfere);
-
-      });
-
-      dot.mouseout(() => {
-        dot.removeClass("hover");
-        $('#hoverLabel').text("");
-
-      }); */
-
-
-    });
-    i++;
-
-  }
-  
-
-  stage.append(dot);
-  
 }
