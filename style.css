@@ -6,14 +6,15 @@
 
 .header {
 position: absolute;
-width: 600px;
-height: 103px;
-left: 69px;
+width: 332px;
+height: 33px;
+left: 70px;
 top: 72px;
 
 font-family: 'IBM Plex Sans', sans-serif;
-font-size: 39.06px;
-line-height: 51px;
+font-size: 25px;
+line-height: 32px;
+font-weight: 500;
 
 color: rgba(255, 255, 255, 0.8);
 }
@@ -26,100 +27,92 @@ body {
 
 .talk-to{
     position: absolute;
-    width: 350px;
-    height: 26px;
+    width: 248px;
+    height: 42px;
     left: 72px;
-    top: 747px;
+    top: 370px;
+
     color: white;
     opacity: 0.38;
 }
 
 span.coworkers{
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    color: #6AAAE5;
+    font-size: 16px;
+    font-weight: bold;
 }
 span.supervisor{
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    color: #D6EBFF;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .coworkers-yes{
     position: absolute;
-    width: 64px;
-    height: 33px;
-    left: 152px;
-    top: 784px;
+    width: 27px;
+    height: 21px;
+    left: 94px;
+    top: 426px;
 
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    color: #6AAAE5;
-    opacity: 0.9;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
 }
 .coworkers-some{
     position: absolute;
-    width: 69px;
-    height: 33px;
-    left: 213px;
-    top: 784px;
+    width: 43px;
+    height: 21px;
+    left: 127px;
+    top: 426px;
 
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    color: #6AAAE5;
-    opacity: 0.9;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
 }
 .coworkers-no{
     position: absolute;
-    width: 64px;
-    height: 33px;
-    left: 280px;
-    top: 784px;
+    width: 21px;
+    height: 21px;
+    left: 175px;
+    top: 426px;
 
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    color: #6AAAE5;
-    opacity: 0.9;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
 }
 .supervisor-yes{
     position: absolute;
-    width: 41px;
-    height: 33px;
-    left: 72px;
-    top: 824px;
+    width: 27px;
+    height: 21px;
+    left: 216px;
+    top: 456px;
 
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    color: #D6EBFF;
-    opacity: 0.9;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
 }
 .supervisor-some{
     position: absolute;
-    width: 65px;
-    height: 33px;
-    left: 72px;
-    top: 872px;
+    width: 43px;
+    height: 21px;
+    left: 216px;
+    top: 488px;
 
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    color: #D6EBFF;
-    opacity: 0.9;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
 }
 .supervisor-no{
     position: absolute;
-    width: 32px;
-    height: 33px;
-    left: 72px;
-    top: 920px;
+    width: 21px;
+    height: 21px;
+    left: 216px;
+    top: 520px;
 
 
     font-family: IBM Plex Sans, sans-serif;
-    font-size: 25px;
-    color: #D6EBFF;
-    opacity: 0.9;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
 }
 
 #stage {
@@ -143,23 +136,27 @@ span.supervisor{
     background-color: #121212;
     color: white;
     border: none;
-    font-size: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .where {
-    top: 123px;
     left: 72px;
+    top: 107px;  
+    
+    font-size: 20px;
     color: #73C7F0;
 }
 .interfere {
-    top: 123px;
-    left: 176px;
+    left: 152px;
+    top: 107px;
     color: #D6EBFF;
 }
 .talkAbout {
-    top: 123px;
-    left: 288px;
+    left: 244px;
+    top: 107px;
     color: #996EF4;
 }
 
@@ -176,23 +173,33 @@ span.supervisor{
 
 
 .consequences {
-    top: 344px;
+    position: absolute;
     left: 72px;
+    top: 183px;
+    width: 240px;
+    height: 42px;
+
+    font-weight: normal;
+    text-align: left;
+
     color: rgba(255, 255, 255, 0.38);
 }
 .yesCon {
-    top: 384px;
     left: 72px;
+    top: 229px;
+
     color: rgba(255, 255, 255, 0.87);
 }
 .maybeCon {
-    top: 384px;
-    left: 136px;
+    left: 119px;
+    top: 229px;
+
     color: rgba(255, 255, 255, 0.87);
 }
 .noCon {
-    top: 384px;
-    left: 241px;
+    left: 188px;
+    top: 229px;
+
     color: rgba(255, 255, 255, 0.87);
 }
 
@@ -206,18 +213,21 @@ span.supervisor{
 
 
 .gender {
-    top: 544px;
     left: 72px;
+    top: 287px;
+
+    font-weight: normal;
+    text-align: left;
     color: rgba(255, 255, 255, 0.38);
 }
 .femaleCon {
-    top: 584px;
     left: 72px;
+    top: 311px;
     color: rgba(255, 255, 255, 0.87);
 }
 .maleCon {
-    top: 584px;
-    left: 184px;
+    left: 147px;
+    top: 311px;;
     color: rgba(255, 255, 255, 0.87);
 }
 .talkTo {
@@ -228,10 +238,10 @@ span.supervisor{
 
 .yes-yes{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 168px;
-    top: 824px;
+    width: 16px;
+    height: 16px;
+    left: 96px;
+    top: 459px;
 
     border-radius: 50%;
     background: #77CDF7;
@@ -239,10 +249,10 @@ span.supervisor{
 }
 .some-yes{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 232px;
-    top: 824px;
+    width: 16px;
+    height: 16px;
+    left: 136px;
+    top: 459px;
 
     border-radius: 50%;
     background: #5CE2B6;
@@ -250,10 +260,10 @@ span.supervisor{
 }
 .no-yes{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 296px;
-    top: 824px;
+    width: 16px;
+    height: 16px;
+    left: 176px;
+    top: 459px;
 
     border-radius: 50%;
     background: #E6EB59;
@@ -261,10 +271,10 @@ span.supervisor{
 }
 .yes-some{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 168px;
-    top: 872px;
+    width: 16px;
+    height: 16px;
+    left: 96px;
+    top: 491px;
 
     border-radius: 50%;
     background: #52A5FF;
@@ -272,10 +282,10 @@ span.supervisor{
 }
 .some-some{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 232px;
-    top: 872px;
+    width: 16px;
+    height: 16px;
+    left: 136px;
+    top: 491px;
 
     border-radius: 50%;
     background: #C4C4C0;
@@ -283,10 +293,10 @@ span.supervisor{
 }
 .no-some{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 296px;
-    top: 872px;
+    width: 16px;
+    height: 16px;
+    left: 176px;
+    top: 491px;
 
     border-radius: 50%;
     background: #FCB055;
@@ -294,10 +304,10 @@ span.supervisor{
 }
 .yes-no{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 168px;
-    top: 920px;
+    width: 16px;
+    height: 16px;
+    left: 96px;
+    top: 523px;
 
     border-radius: 50%;
     background: #996EF4;
@@ -305,10 +315,10 @@ span.supervisor{
 }
 .some-no{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 232px;
-    top: 920px;
+    width: 16px;
+    height: 16px;
+    left: 136px;
+    top: 523px;
 
     border-radius: 50%;
     background: #F764A6;
@@ -316,10 +326,10 @@ span.supervisor{
 }
 .no-no{
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 296px;
-    top: 920px;
+    width: 16px;
+    height: 16px;
+    left: 176px;
+    top: 523px;
 
     border-radius: 50%;
     background: #F56E4C;
