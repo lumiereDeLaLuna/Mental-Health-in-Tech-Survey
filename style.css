@@ -126,7 +126,7 @@ span.supervisor{
     position: absolute;
     width: 204px;
     height: 128px;
-    top: 192px;
+    top: 602px;
     left: 72px;
     margin-top: 5px;
 }
@@ -145,8 +145,6 @@ span.supervisor{
 .where {
     left: 72px;
     top: 107px;  
-    
-    font-size: 20px;
     color: #73C7F0;
 }
 .interfere {
@@ -351,6 +349,11 @@ span.supervisor{
 
 .ageGroup {
     background-color: rgba(115, 199, 240, 0.8);
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+.circle-blub {
     position: absolute;
     box-sizing: border-box;
     border-radius: 100%;
