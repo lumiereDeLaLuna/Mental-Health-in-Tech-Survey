@@ -30,7 +30,7 @@ body {
     width: 248px;
     height: 42px;
     left: 72px;
-    top: 370px;
+    top: 726px;
 
     color: white;
     opacity: 0.38;
@@ -52,7 +52,7 @@ span.supervisor{
     width: 27px;
     height: 21px;
     left: 94px;
-    top: 426px;
+    top: 782px;
 
     font-family: IBM Plex Sans, sans-serif;
     font-weight: bold;
@@ -63,7 +63,7 @@ span.supervisor{
     width: 43px;
     height: 21px;
     left: 127px;
-    top: 426px;
+    top: 782px;
 
     font-family: IBM Plex Sans, sans-serif;
     font-weight: bold;
@@ -74,7 +74,7 @@ span.supervisor{
     width: 21px;
     height: 21px;
     left: 175px;
-    top: 426px;
+    top: 782px;
 
     font-family: IBM Plex Sans, sans-serif;
     font-weight: bold;
@@ -85,7 +85,7 @@ span.supervisor{
     width: 27px;
     height: 21px;
     left: 216px;
-    top: 456px;
+    top: 812px;
 
     font-family: IBM Plex Sans, sans-serif;
     font-weight: bold;
@@ -96,7 +96,7 @@ span.supervisor{
     width: 43px;
     height: 21px;
     left: 216px;
-    top: 488px;
+    top: 844px;
 
     font-family: IBM Plex Sans, sans-serif;
     font-weight: bold;
@@ -107,7 +107,7 @@ span.supervisor{
     width: 21px;
     height: 21px;
     left: 216px;
-    top: 520px;
+    top: 876px;
 
 
     font-family: IBM Plex Sans, sans-serif;
@@ -126,7 +126,7 @@ span.supervisor{
     position: absolute;
     width: 204px;
     height: 128px;
-    top: 602px;
+    top: 182px;
     left: 72px;
     margin-top: 5px;
 }
@@ -191,7 +191,7 @@ span.supervisor{
 .consequences {
     position: absolute;
     left: 72px;
-    top: 183px;
+    top: 343px;
     width: 240px;
     height: 42px;
 
@@ -202,19 +202,19 @@ span.supervisor{
 }
 .yesCon {
     left: 72px;
-    top: 229px;
+    top: 389px;
 
     color: rgba(255, 255, 255, 0.87);
 }
 .maybeCon {
     left: 119px;
-    top: 229px;
+    top: 389px;
 
     color: rgba(255, 255, 255, 0.87);
 }
 .noCon {
     left: 188px;
-    top: 229px;
+    top: 389px;
 
     color: rgba(255, 255, 255, 0.87);
 }
@@ -230,7 +230,7 @@ span.supervisor{
 
 .gender {
     left: 72px;
-    top: 287px;
+    top: 544px;
 
     font-weight: normal;
     text-align: left;
@@ -238,17 +238,82 @@ span.supervisor{
 }
 .femaleCon {
     left: 72px;
-    top: 311px;
+    top: 568px;
     color: rgba(255, 255, 255, 0.87);
 }
 .maleCon {
     left: 147px;
-    top: 311px;;
+    top: 568px;;
     color: rgba(255, 255, 255, 0.87);
 }
-.talkTo {
-    top: 744px;
-    left: 72px;
+
+
+
+.coworkers-yes{
+    position: absolute;
+    width: 27px;
+    height: 21px;
+    left: 94px;
+    top: 782px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
+}
+.coworkers-some{
+    position: absolute;
+    width: 43px;
+    height: 21px;
+    left: 127px;
+    top: 782px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
+}
+.coworkers-no{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 175px;
+    top: 782px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
+}
+.supervisor-yes{
+    position: absolute;
+    width: 27px;
+    height: 21px;
+    left: 216px;
+    top: 812px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
+}
+.supervisor-some{
+    position: absolute;
+    width: 43px;
+    height: 21px;
+    left: 216px;
+    top: 844px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.38);
+}
+.supervisor-no{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 216px;
+    top: 876px;
+
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: bold;
     color: rgba(255, 255, 255, 0.38);
 }
 
@@ -257,7 +322,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 96px;
-    top: 459px;
+    top: 815px;
 
     border-radius: 50%;
     background: #77CDF7;
@@ -268,7 +333,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 136px;
-    top: 459px;
+    top: 815px;
 
     border-radius: 50%;
     background: #5CE2B6;
@@ -279,7 +344,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 176px;
-    top: 459px;
+    top: 815px;
 
     border-radius: 50%;
     background: #E6EB59;
@@ -290,7 +355,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 96px;
-    top: 491px;
+    top: 847px;
 
     border-radius: 50%;
     background: #52A5FF;
@@ -301,7 +366,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 136px;
-    top: 491px;
+    top: 847px;
 
     border-radius: 50%;
     background: #C4C4C0;
@@ -312,7 +377,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 176px;
-    top: 491px;
+    top: 847px;
 
     border-radius: 50%;
     background: #FCB055;
@@ -323,7 +388,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 96px;
-    top: 523px;
+    top: 879px;
 
     border-radius: 50%;
     background: #996EF4;
@@ -334,7 +399,7 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 136px;
-    top: 523px;
+    top: 879px;
 
     border-radius: 50%;
     background: #F764A6;
@@ -345,12 +410,14 @@ span.supervisor{
     width: 16px;
     height: 16px;
     left: 176px;
-    top: 523px;
+    top: 879px;
 
     border-radius: 50%;
     background: #F56E4C;
     opacity: 0.9;
 }
+
+
 .country{
     background-color: rgba(106, 170, 299, 0.8);
     position: absolute;

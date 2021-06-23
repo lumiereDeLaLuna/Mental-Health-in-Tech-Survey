@@ -128,6 +128,8 @@ function createDots() {
     });
   }
 }
+
+//function, damit die Filter funktionieren
 function visibilityByData(prop, val) {
   $('.person-interfere-talkAbout').each(function () {
     if ($(this).data(prop) === val) {
@@ -223,7 +225,7 @@ function drawAnnualRing() {
   });
 }
 
-
+//welcher Screen aus gerade gezeigt wird
 function whereView() {
 
   drawMap();
@@ -256,34 +258,27 @@ function talkAboutView() {
   talkAboutButton();
 }
 
-
+//welche Filtermöglichkeiten es gibt
 function mapButton() {
-  $('.interfere-hide').css({
-    'opacity': '0'
-  });
-  $('.talk-about').css({
-    'opacity': '0'
-  });
+
+  $('.interfere-hide').hide();
+  $('.talk-about').hide();
+
 }
 function interfereButton() {
-  $('.interfere-hide').css({
-    'opacity': '0.9'
-  });
-  $('.talk-about').css({
-    'opacity': '0'
-  });
+
+  $('.interfere-hide').show();
+  $('.talk-about').hide();
+
 }
 function talkAboutButton() {
 
-  $('.interfere-hide').css({
-    'opacity': '0.9'
-  });
+  $('.interfere-hide').show();
+  $('.talk-about').show();
 
-  $('.talk-about').css({
-    'opacity': '0.9'
-  });
 }
 
+//filter nach den consequences
 function consequencesTalkAboutView() {
   visibilityByData("mentalHealthConsequence", ["female", "male"]);
 
@@ -337,6 +332,7 @@ function noTalkAboutView() {
   });
 }
 
+//filter nach dem gender
 function genderTalkAboutView() {
   visibilityByData("gender", ["female", "male"]);
 
@@ -368,6 +364,7 @@ function maleTalkAboutView() {
   });
 }
 
+//filter ob sie mit den coworkern oder den supervisorn reden
 function yesYes() {
   visibilityByData("coworkers", "Yes");
   visibilityByData("supervisor", "Yes");
