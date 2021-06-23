@@ -157,6 +157,24 @@ span.supervisor{
     top: 107px;
     color: #996EF4;
 }
+.where-opacity{
+    left: 72px;
+    top: 107px;  
+    opacity: 0.38;
+    color: #FFFFFF;
+}
+.interfere-opacity{
+    left: 152px;
+    top: 107px; 
+    opacity: 0.38;
+    color: #FFFFFF;
+}
+.talkAbout-opacity{
+    left: 244px;
+    top: 107px; 
+    opacity: 0.38;
+    color: #FFFFFF;
+}
 
 
 .cons-yes{
@@ -333,27 +351,12 @@ span.supervisor{
     background: #F56E4C;
     opacity: 0.9;
 }
-
-.country {
+.country{
     background-color: rgba(106, 170, 299, 0.8);
     position: absolute;
     border-radius: 100%;
 }
-
-.familybackground {
-    background-color: rgb(115, 199, 240);
-    position: absolute;
-    box-sizing: border-box;
-    border-radius: 100%;
-}
-
-.ageGroup {
-    background-color: rgba(115, 199, 240, 0.8);
-    position: absolute;
-    box-sizing: border-box;
-    border-radius: 100%;
-}
-.circle-blub {
+.person-interfere-talkAbout {
     position: absolute;
     box-sizing: border-box;
     border-radius: 100%;
