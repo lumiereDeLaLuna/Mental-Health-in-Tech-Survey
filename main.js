@@ -1,12 +1,11 @@
 let stageHeight, stageWidth;
-let data, cumulateState, cumulateFamiliybackground, groupeFamilyBackground, groupedByWork, groupedByAge;
+let data;
 let stage;
 
 $(function () {
   stage = $('#stage');
   stageHeight = stage.innerHeight();
   stageWidth = stage.innerWidth();
-  prepareData();
   createDots();
   //drawMap();
   //drawFamilyBackground();
@@ -14,23 +13,6 @@ $(function () {
   //talkAboutView();
   interfereView();
 });
-
-function prepareData() {
-  data = gmynd.mergeData(infoData, positionData, "state");
-
-  //für Map
-  cumulateState = gmynd.cumulateData(data, "state");
-  cumulateState = gmynd.mergeData(cumulateState, positionData, "state");
-
-  //für FamilyBackground
-  groupedByWork = gmynd.groupData(data, "workInterfere");
-
-  //für AnnualRings
-  groupedByAge = gmynd.sortData(data, ["supervisor", "coworkers"])
-  groupedByAge = gmynd.groupData(data, "age");
-  //console.log(groupedByAge);
-
-}
 
 function createDots() {
   const dotRadius = 4;

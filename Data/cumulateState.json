@@ -1,0 +1,271 @@
+[{
+	"state":"IL",
+	"count":28,
+	"latitude":39.739318,
+	"longitude":-89.504139,
+	"city":"Illinois"
+},{
+	"state":"IN",
+	"count":26,
+	"latitude":39.7662195,
+	"longitude":-86.441277,
+	"city":"Indiana"
+},{
+	"state":"TX",
+	"count":44,
+	"latitude":31.1693363,
+	"longitude":-100.0768425,
+	"city":"Texas"
+},{
+	"state":"TN",
+	"count":45,
+	"latitude":35.830521,
+	"longitude":-85.9785989,
+	"city":"Tennessee"
+},{
+	"state":"MI",
+	"count":22,
+	"latitude":44.9435598,
+	"longitude":-86.4158049,
+	"city":"Michigan"
+},{
+	"state":"OH",
+	"count":28,
+	"latitude":40.1903624,
+	"longitude":-82.6692525,
+	"city":"Ohio"
+},{
+	"state":"CA",
+	"count":138,
+	"latitude":37.2718745,
+	"longitude":-119.2704153,
+	"city":"California"
+},{
+	"state":"CT",
+	"count":4,
+	"latitude":41.5187835,
+	"longitude":-72.757507,
+	"city":"Connecticut"
+},{
+	"state":"MD",
+	"count":7,
+	"latitude":38.8063524,
+	"longitude":-77.2684162,
+	"city":"Maryland"
+},{
+	"state":"NY",
+	"count":56,
+	"latitude":40.7056258,
+	"longitude":-73.97968,
+	"city":"New York"
+},{
+	"state":"NC",
+	"count":14,
+	"latitude":35.2145629,
+	"longitude":-79.8912675,
+	"city":"North Carolina"
+},{
+	"state":"MA",
+	"count":20,
+	"latitude":42.0629398,
+	"longitude":-71.718067,
+	"city":"Massachusetts"
+},{
+	"state":"IA",
+	"count":4,
+	"latitude":41.9383166,
+	"longitude":-93.389798,
+	"city":"Iowa"
+},{
+	"state":"PA",
+	"count":29,
+	"latitude":40.9945928,
+	"longitude":-77.6046984,
+	"city":"Pennsylvania"
+},{
+	"state":"WA",
+	"count":70,
+	"latitude":47.751076,
+	"longitude":-120.740135,
+	"city":"Washington"
+},{
+	"state":"WI",
+	"count":12,
+	"latitude":44.7862968,
+	"longitude":-89.8267049,
+	"city":"Wisconsin"
+},{
+	"state":"UT",
+	"count":10,
+	"latitude":39.4997605,
+	"longitude":-111.547028,
+	"city":"Utah"
+},{
+	"state":"NM",
+	"count":2,
+	"latitude":34.1662325,
+	"longitude":-106.0260685,
+	"city":"New Mexico"
+},{
+	"state":"OR",
+	"count":29,
+	"latitude":44.1419049,
+	"longitude":-120.5380993,
+	"city":"Oregon"
+},{
+	"state":"FL",
+	"count":15,
+	"latitude":27.9757279,
+	"longitude":-83.8330166,
+	"city":"Florida"
+},{
+	"state":"MN",
+	"count":21,
+	"latitude":46.4418595,
+	"longitude":-93.3655146,
+	"city":"Minnesota"
+},{
+	"state":"MO",
+	"count":12,
+	"latitude":38.3046615,
+	"longitude":-92.437099,
+	"city":"Missouri"
+},{
+	"state":"AZ",
+	"count":7,
+	"latitude":34.1682185,
+	"longitude":-111.930907,
+	"city":"Arizona"
+},{
+	"state":"CO",
+	"count":9,
+	"latitude":38.9979339,
+	"longitude":-105.550567,
+	"city":"Colorado"
+},{
+	"state":"GA",
+	"count":12,
+	"latitude":32.6781248,
+	"longitude":-83.2229757,
+	"city":"Georgia"
+},{
+	"state":"DC",
+	"count":4,
+	"latitude":38.8993487,
+	"longitude":-77.0145666,
+	"city":"District of Columbia"
+},{
+	"state":"NE",
+	"count":2,
+	"latitude":41.5008195,
+	"longitude":-99.680902,
+	"city":"Nebraska"
+},{
+	"state":"WV",
+	"count":1,
+	"latitude":38.9201705,
+	"longitude":-80.1816905,
+	"city":"West Virginia"
+},{
+	"state":"OK",
+	"count":6,
+	"latitude":35.3097654,
+	"longitude":-98.7165585,
+	"city":"Oklahoma"
+},{
+	"state":"KS",
+	"count":3,
+	"latitude":38.4987789,
+	"longitude":-98.3200779,
+	"city":"Kansas"
+},{
+	"state":"VA",
+	"count":14,
+	"latitude":38.0033855,
+	"longitude":-79.4587861,
+	"city":"Virginia"
+},{
+	"state":"NH",
+	"count":3,
+	"latitude":44.0012306,
+	"longitude":-71.5799231,
+	"city":"New Hampshire"
+},{
+	"state":"KY",
+	"count":5,
+	"latitude":37.8222935,
+	"longitude":-85.7682399,
+	"city":"Kentucky"
+},{
+	"state":"AL",
+	"count":7,
+	"latitude":32.6010112,
+	"longitude":-86.6807365,
+	"city":"Alabama"
+},{
+	"state":"NV",
+	"count":3,
+	"latitude":38.502032,
+	"longitude":-117.0230604,
+	"city":"Nevada"
+},{
+	"state":"NJ",
+	"count":6,
+	"latitude":40.1430058,
+	"longitude":-74.7311156,
+	"city":"New Jersey"
+},{
+	"state":"SC",
+	"count":5,
+	"latitude":33.62505,
+	"longitude":-80.9470381,
+	"city":"South Carolina"
+},{
+	"state":"VT",
+	"count":3,
+	"latitude":43.8717545,
+	"longitude":-72.4477828,
+	"city":"Vermont"
+},{
+	"state":"SD",
+	"count":3,
+	"latitude":44.2126995,
+	"longitude":-100.2471641,
+	"city":"South Dakota"
+},{
+	"state":"ID",
+	"count":1,
+	"latitude":45.4945756,
+	"longitude":-114.1424303,
+	"city":"Idaho"
+},{
+	"state":"MS",
+	"count":1,
+	"latitude":32.5851062,
+	"longitude":-89.8772196,
+	"city":"Mississippi"
+},{
+	"state":"RI",
+	"count":1,
+	"latitude":41.5827282,
+	"longitude":-71.5064508,
+	"city":"Rhode Island"
+},{
+	"state":"WY",
+	"count":2,
+	"latitude":43.000325,
+	"longitude":-107.5545669,
+	"city":"Wyoming"
+},{
+	"state":"LA",
+	"count":1,
+	"latitude":30.9733766,
+	"longitude":-91.4299097,
+	"city":"Louisiana"
+},{
+	"state":"ME",
+	"count":1,
+	"latitude":45.2185133,
+	"longitude":-69.0148656,
+	"city":"Maine"
+}]
