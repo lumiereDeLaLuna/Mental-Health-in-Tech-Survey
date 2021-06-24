@@ -37,6 +37,14 @@ function createDots() {
     const angleOffset = Math.random() * 100;
 
     ageGroup.forEach((person, j) => {
+
+      //damit sich die PunktPersonen sich hinter den jeweiligen Kreis ihres Staates anordnen 
+      const rMap = 3;
+      const xMap = gmynd.map(person.longitude, -125, -68, 319, 1368) - rMap;
+      const yMap = gmynd.map(person.latitude, 24, 49, 912, 226) - rMap;
+      const mapColor = 'rgba(115, 199, 240, 0)'; 
+
+      //für die annualRings
       let angle = j * anglePerDot + angleOffset;
       const xAge = (centerPoint.x + 120) + (Math.cos(angle) * ringRadius);
       const yAge = centerPoint.y + (Math.sin(angle) * ringRadius);
@@ -65,6 +73,7 @@ function createDots() {
         yearColor = 'rgba(245, 110, 76, 0.8)';
       }
 
+      //für workInterfere
       let currentInterfere = person.workInterfere;
       let keyNumber = workKeys.indexOf(currentInterfere);
       const rFam = 7;
@@ -87,18 +96,27 @@ function createDots() {
       groupedByWork[currentInterfere]++;
 
       dot.data({
+
+        mapColor: mapColor,
+        mapHeight: rMap * 5,
+        mapWidth: rMap * 5,
+        mapLeft: xMap,
+        mapTop: yMap,
+
         ageColor: yearColor,
         ageHeight: dotRadius * 2,
         ageWidth: dotRadius * 2,
         ageBorder: ageBorder,
         ageLeft: xAge,
         ageTop: yAge,
+
         interfereColor: workColor,
         interfereHeight: rFam * 2,
         interfereWidth: rFam * 2,
         interfereBorder: border,
         interfereTop: yFam,
         interfereLeft: xFam,
+
         gender: person.gender,
         mentalHealthConsequence: person.mentalHealthConsequence,
         coworkers: person.coworkers,
@@ -109,6 +127,7 @@ function createDots() {
 
     });
   }
+
 }
 
 //function, damit die Filter funktionieren
@@ -136,9 +155,8 @@ function drawMap() {
 
     const area = gmynd.map(state.count, extremeStates.min, extremeStates.max, 25, 500);
     const rMap = gmynd.circleRadius(area);
-    const xMap = gmynd.map(state.longitude, -125, -68, 0, stageWidth) - rMap;
-    const yMap = gmynd.map(state.latitude, 24, 49, stageHeight, 0) - rMap;
-
+    const xMap = gmynd.map(state.longitude, -125, -68, 319, 1368) - rMap;
+    const yMap = gmynd.map(state.latitude, 24, 49, 912, 226) - rMap;
 
     let dot = $('<div></div>');
     dot.addClass("country");
@@ -150,9 +168,7 @@ function drawMap() {
       'top': yMap,
     });
 
-
     dot.data(state);
-
     stage.append(dot);
 
     /*        dot.mouseover(() => {
@@ -169,6 +185,23 @@ function drawMap() {
 
   });
 }
+
+function drawPersonMap(){
+
+  $('.person-interfere-talkAbout').each(function () {
+    let dotData = $(this).data();
+    $(this).css({
+      'background-color': dotData.mapColor,
+      'border': dotData.mapBorder,
+      'height': dotData.mapHeight,
+      'width': dotData.mapWidth,
+      'left': dotData.mapLeft,
+      'top': dotData.mapTop,  
+    });
+
+  });
+}
+
 function drawFamilyBackground() {
   /*  const keys = Object.keys(groupeFamilyBackground);
     const keyCount = keys.length;
@@ -178,16 +211,13 @@ function drawFamilyBackground() {
     let dotData = $(this).data();
     $(this).css({
       'background-color': dotData.interfereColor,
-      'border': dotData.interfereBorder
-    });
-    $(this).animate({
-      //'background-color': dotData.interfereColor,
+      'border': dotData.interfereBorder,
       'height': dotData.interfereHeight,
       'width': dotData.interfereWidth,
       'left': dotData.interfereLeft,
-      'top': dotData.interfereTop,
-      //'border': dotData.interfereBorder,
-    }, 3000);
+      'top': dotData.interfereTop,  
+    });
+
   });
 }
 function drawAnnualRing() {
@@ -195,22 +225,20 @@ function drawAnnualRing() {
     let dotData = $(this).data();
     $(this).css({
       'background-color': dotData.ageColor,
-      'border': dotData.ageBorder
-    });
-    $(this).animate({
-      //'background-color': dotData.ageColor,
+      'border': dotData.ageBorder,
       'height': dotData.ageHeight,
       'width': dotData.ageWidth,
       'left': dotData.ageLeft,
-      'top': dotData.ageTop
-    }, 3000);
+      'top': dotData.ageTop,
+    });
   });
 }
 
 //welcher Screen aus gerade gezeigt wird
 function whereView() {
-
-  drawMap();
+ setTimeout(drawMap(), 3000)
+  //drawMap();
+  drawPersonMap();
 
   $('.where-opacity').addClass('where').removeClass('where-opacity');
   $('.interfere').addClass('interfere-opacity').removeClass('interfere');
@@ -223,6 +251,8 @@ function interfereView() {
 
   drawFamilyBackground();
 
+  $('.country').removeClass('country');
+
   $('.where').addClass('where-opacity').removeClass('where');
   $('.interfere-opacity').addClass('interfere').removeClass('interfere-opacity');
   $('.talkAbout').addClass('talkAbout-opacity').removeClass('talkAbout');
@@ -231,7 +261,10 @@ function interfereView() {
 
 }
 function talkAboutView() {
+  
   drawAnnualRing();
+
+  $('.country').removeClass('country');
 
   $('.where').addClass('where-opacity').removeClass('where');
   $('.interfere').addClass('interfere-opacity').removeClass('interfere');

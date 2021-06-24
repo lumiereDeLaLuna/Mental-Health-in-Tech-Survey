@@ -419,14 +419,16 @@ span.supervisor{
 
 
 .country{
-    background-color: rgba(106, 170, 299, 0.8);
+    background-color: rgba(106, 170, 299, 1);
     position: absolute;
     border-radius: 100%;
+    transition-delay: 3s;
 }
 .person-interfere-talkAbout {
     position: absolute;
     box-sizing: border-box;
     border-radius: 100%;
+    transition: all 3s ease-in-out;
 }
 
 .hover {
