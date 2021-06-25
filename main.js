@@ -146,7 +146,7 @@ function visibilityByData(prop, val) {
   });
 }
 
-
+//änderung der Positionen
 function drawMap() {
   const extremeStates = gmynd.dataExtremes(cumulateState, "count")
   //console.log(extremStates)
@@ -185,7 +185,6 @@ function drawMap() {
 
   });
 }
-
 function drawPersonMap(){
 
   $('.person-interfere-talkAbout').each(function () {
@@ -201,7 +200,6 @@ function drawPersonMap(){
 
   });
 }
-
 function drawFamilyBackground() {
   /*  const keys = Object.keys(groupeFamilyBackground);
     const keyCount = keys.length;
@@ -234,7 +232,7 @@ function drawAnnualRing() {
   });
 }
 
-//welcher Screen aus gerade gezeigt wird
+//welcher Screen gerade gezeigt wird
 function whereView() {
  setTimeout(drawMap(), 3000)
   //drawMap();
@@ -261,7 +259,7 @@ function interfereView() {
 
 }
 function talkAboutView() {
-  
+
   drawAnnualRing();
 
   $('.country').removeClass('country');
