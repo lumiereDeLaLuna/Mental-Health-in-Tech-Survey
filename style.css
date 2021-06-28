@@ -25,6 +25,28 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+#stage {
+    background-color: #121212;
+    width: 1440px;
+    height: 1024px;
+
+}
+
+#hoverLabel {
+    position: absolute;
+    width: 170px;
+    height: 128px;
+    top: 182px;
+    left: 72px;
+    margin-top: 5px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .talk-to{
     position: absolute;
     width: 248px;
@@ -113,22 +135,6 @@ span.supervisor{
     font-family: IBM Plex Sans, sans-serif;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.38);
-}
-
-#stage {
-    background-color: #121212;
-    width: 1440px;
-    height: 1024px;
-
-}
-
-#hoverLabel {
-    position: absolute;
-    width: 204px;
-    height: 128px;
-    top: 182px;
-    left: 72px;
-    margin-top: 5px;
 }
 
 .button{
@@ -422,7 +428,7 @@ span.supervisor{
     background-color: rgba(106, 170, 299, 1);
     position: absolute;
     border-radius: 100%;
-    transition-delay: 3s;
+
 }
 .person-interfere-talkAbout {
     position: absolute;
