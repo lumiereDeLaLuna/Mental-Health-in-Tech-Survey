@@ -6,7 +6,7 @@
 
 .header {
 position: absolute;
-width: 332px;
+width: 400px;
 height: 33px;
 left: 70px;
 top: 72px;
@@ -428,8 +428,8 @@ span.supervisor{
     background-color: rgba(106, 170, 299, 1);
     position: absolute;
     border-radius: 100%;
-
 }
+
 .person-interfere-talkAbout {
     position: absolute;
     box-sizing: border-box;
@@ -438,5 +438,5 @@ span.supervisor{
 }
 
 .hover {
-    background-color: rgba(247, 96, 200, 0.8);
+    background-color: rgba(247, 102, 201, 1);
 }

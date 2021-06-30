@@ -1,7 +1,13 @@
 let stageHeight, stageWidth;
 let data;
 let stage;
-let selectedProps = [];
+let selectedProps = {
+  coworkers: null,
+  supervisor: null,
+  gender: null,
+  mentalHealthConsequence: null,
+
+};
 
 $(function () {
   stage = $('#stage');
@@ -41,7 +47,7 @@ function createDots() {
     ageGroup.forEach((person, j) => {
 
       //damit sich die PunktPersonen sich hinter den jeweiligen Kreis ihres Staates anordnen 
-      const rMap = 3;
+      const rMap = 1;
       const xMap = gmynd.map(person.longitude, -125, -68, 319, 1368) - rMap;
       const yMap = gmynd.map(person.latitude, 24, 49, 912, 226) - rMap;
       const mapColor = 'rgba(115, 199, 240, 0)';
@@ -141,7 +147,7 @@ function createDots() {
 function onDotHover(event) {
   const dot = $(event.target);
   // console.log(dot.data());
-   let person = dot.data();
+  let person = dot.data();
 
   dot.addClass("hover");
   $('#hoverLabel').text('Familybackground : ' + person.familyHistory + '  ' + 'Treatment : ' + person.treatment + '  ' + 'Work interfere : ' + person.workInterfere);
@@ -149,44 +155,41 @@ function onDotHover(event) {
 function offDotHover(event) {
   const dot = $(event.target);
   // console.log(dot.data());
-   let person = dot.data();
+  let person = dot.data();
 
-   dot.removeClass("hover");
-   $('#hoverLabel').text("");
+  dot.removeClass("hover");
+  $('#hoverLabel').text("");
 }
 
-
 //function, damit die Filter funktionieren
-function visibilityByData(prop, val) {
+function visibilityByData() {
   $('.person-interfere-talkAbout').each(function () {
-
-    if (selectedProps.includes($(this).data(prop) === val)) {
+    if (
+      ($(this).data("gender") === selectedProps.gender || selectedProps.gender == null) &&
+      ($(this).data("coworkers") === selectedProps.coworkers || selectedProps.coworkers == null) &&
+      ($(this).data("supervisor") === selectedProps.supervisor || selectedProps.supervisor == null) &&
+      ($(this).data("mentalHealthConsequence") === selectedProps.mentalHealthConsequence || selectedProps.mentalHealthConsequence == null)
+    ) {
       $(this).css({
         'opacity': '1'
       });
-      console.log('opacity bei 1')
     }
     else {
       $(this).css({
         'opacity': '0.2'
       });
-      console.log('opacity bei 0.2')
     }
-
-    // if ($(this).data(prop) === val) {
-    //   $(this).css({
-    //     'opacity': '1'
-    //   });
-    // }
-    // else {
-    //   $(this).css({
-    //     'opacity': '0.2'
-    //   });
-    // }
   });
 }
 function showAllPersonInterferes() {
   $(".person-interfere-talkAbout").css({ opacity: 1 });
+}
+function selectedPropsNull() {
+  selectedProps.mentalHealthConsequence = null;
+  selectedProps.gender = null;
+  selectedProps.coworkers = null;
+  selectedProps.supervisor = null;
+
 }
 
 //änderung der Positionen
@@ -216,7 +219,7 @@ function drawMap() {
 
     dot.mouseover(() => {
       dot.addClass("hover");
-      $('#hoverLabel').text('State : ' + state.city +  '\r \n'  + 'Attendees : ' + state.count);
+      $('#hoverLabel').text('State : ' + state.city + '\r \n' + 'Attendees : ' + state.count);
 
     });
 
@@ -284,7 +287,6 @@ function whereView() {
   $('.talkAbout').addClass('talkAbout-opacity').removeClass('talkAbout');
 
   mapButton();
-
 }
 function interfereView() {
 
@@ -335,6 +337,7 @@ function talkAboutButton() {
 //filter nach den consequences
 function consequencesTalkAboutView() {
   showAllPersonInterferes();
+  selectedPropsNull();
 
   $('.yesCon').css({
     'opacity': '0.9'
@@ -347,48 +350,111 @@ function consequencesTalkAboutView() {
   });
 }
 function yesTalkAboutView() {
-  visibilityByData("mentalHealthConsequence", "Yes");
 
-  $('.yesCon').css({
-    'opacity': '0.9'
-  });
-  $('.maybeCon').css({
-    'opacity': '0.38'
-  });
-  $('.noCon').css({
-    'opacity': '0.38'
-  });
+  if (selectedProps.mentalHealthConsequence === null || selectedProps.mentalHealthConsequence === 'Maybe' || selectedProps.mentalHealthConsequence === 'No') {
+
+    selectedProps.mentalHealthConsequence = "Yes";
+    visibilityByData();
+  
+    $('.yesCon').css({
+      'opacity': '0.9'
+    });
+    $('.maybeCon').css({
+      'opacity': '0.38'
+    });
+    $('.noCon').css({
+      'opacity': '0.38'
+    });
+    console.log('yes if')
+    console.log(selectedProps)
+
+  } else {
+
+    selectedProps.mentalHealthConsequence = null;
+    visibilityByData();
+
+    $('.maybeCon').css({
+      'opacity': '0.9'
+    });
+    $('.noCon').css({
+      'opacity': '0.9'
+    });
+  }
+  console.log('yes else')
+  console.log(selectedProps)
 }
 function maybeTalkAboutView() {
-  visibilityByData("mentalHealthConsequence", "Maybe");
 
-  $('.yesCon').css({
-    'opacity': '0.38'
-  });
-  $('.maybeCon').css({
-    'opacity': '0.9'
-  });
-  $('.noCon').css({
-    'opacity': '0.38'
-  });
+  if (selectedProps.mentalHealthConsequence === null || selectedProps.mentalHealthConsequence === 'Yes' || selectedProps.mentalHealthConsequence === 'No') {
+
+    selectedProps.mentalHealthConsequence = "Maybe";
+    visibilityByData();
+  
+    $('.yesCon').css({
+      'opacity': '0.38'
+    });
+    $('.maybeCon').css({
+      'opacity': '0.9'
+    });
+    $('.noCon').css({
+      'opacity': '0.38'
+    });
+    console.log('maybe if')
+    console.log(selectedProps)
+  } else {
+
+    selectedProps.mentalHealthConsequence = null;
+    visibilityByData();
+
+    $('.yesCon').css({
+      'opacity': '0.9'
+    });
+    $('.noCon').css({
+      'opacity': '0.9'
+    });
+    console.log('maybe else')
+    console.log(selectedProps)
+  }
 }
 function noTalkAboutView() {
-  visibilityByData("mentalHealthConsequence", "No");
 
-  $('.yesCon').css({
-    'opacity': '0.38'
-  });
-  $('.maybeCon').css({
-    'opacity': '0.38'
-  });
-  $('.noCon').css({
-    'opacity': '0.9'
-  });
+  if (selectedProps.mentalHealthConsequence === null || selectedProps.mentalHealthConsequence === 'Yes' || selectedProps.mentalHealthConsequence === 'Maybe') {
+
+    selectedProps.mentalHealthConsequence = "No";
+    visibilityByData();
+  
+    $('.yesCon').css({
+      'opacity': '0.38'
+    });
+    $('.maybeCon').css({
+      'opacity': '0.38'
+    });
+    $('.noCon').css({
+      'opacity': '0.9'
+    });
+    console.log('no if')
+    console.log(selectedProps)
+
+  } else {
+
+    selectedProps.mentalHealthConsequence = null;
+    visibilityByData();
+
+    $('.yesCon').css({
+      'opacity': '0.9'
+    });
+    $('.maybeCon').css({
+      'opacity': '0.9'
+    });
+    console.log('no else')
+    console.log(selectedProps)
+  }
 }
 
 //filter nach dem gender
 function genderTalkAboutView() {
   showAllPersonInterferes();
+  selectedPropsNull();
 
   $('.femaleCon').css({
     'opacity': '0.9'
@@ -398,163 +464,425 @@ function genderTalkAboutView() {
   });
 }
 function femaleTalkAboutView() {
-  visibilityByData("gender", "female");
 
-  $('.femaleCon').css({
-    'opacity': '0.9'
-  });
+  if (selectedProps.gender === null || selectedProps.gender === 'male') {
+    selectedProps.gender = "female";
+    visibilityByData();
+
+    $('.femaleCon').css({
+      'opacity': '0.9'
+    });
   $('.maleCon').css({
     'opacity': '0.38'
   });
+
+  } else {
+    selectedProps.gender = null;
+    visibilityByData();
+
+    $('.maleCon').css({
+      'opacity': '0.9'
+    });
+  }
 }
 function maleTalkAboutView() {
-  visibilityByData("gender", "male");
 
+  if (selectedProps.gender === null || selectedProps.gender === 'female') {
+    selectedProps.gender = "male";
+    visibilityByData();
+  
+    $('.maleCon').css({
+      'opacity': '0.9'
+    });
   $('.femaleCon').css({
     'opacity': '0.38'
   });
-  $('.maleCon').css({
-    'opacity': '0.9'
-  });
+
+  } else {
+    selectedProps.gender = null;
+    visibilityByData();
+
+    $('.femaleCon').css({
+      'opacity': '0.9'
+    });
+  }
 }
 
 //filter ob sie mit den coworkern oder den supervisorn reden
 function yesYes() {
-  selectedProps.push('coworkers');
-  console.log(selectedProps);
-  visibilityByData(selectedProps, "Yes");
+
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "Yes";
+    selectedProps.supervisor = "Yes";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
+
+  // selectedProps.coworkers = "Yes";
+  // selectedProps.supervisor = "Yes";
+  // console.log(selectedProps);
+  // visibilityByData();
+
+  // $('.yes-yes').css({
+  //   'opacity': '0.38'
+  // });
+  // $('.some-yes').css({
+  //   'opacity': '0.9'
+  // });
+  // $('.no-yes').css({
+  //   'opacity': '0.38'
+  // });
+  // $('.yes-some').css({
+  //   'opacity': '0.38'
+  // });
+  // $('.some-some').css({
+  //   'opacity': '0.38'
+  // });
+  // $('.no-some').css({
+  //   'opacity': '0.38'
+  // });
+  // $('.yes-no').css({
+  //   'opacity': '0.38'
+  // });
+  // $('.some-no').css({
+  //   'opacity': '0.38'
+  // });
+  // $('.no-no').css({
+  //   'opacity': '0.38'
+  // });
 }
-// function yesYes() {
-//   visibilityByData("coworkers", "Yes");
-//   visibilityByData("supervisor", "Yes");
-
-//   $('.yes-yes').css({
-//     'opacity': '0.9'
-//   });
-//   $('.some-yes').css({
-//     'opacity': '0.38'
-//   });
-//   $('.no-yes').css({
-//     'opacity': '0.38'
-//   });
-//   $('.yes-some').css({
-//     'opacity': '0.38'
-//   });
-//   $('.some-some').css({
-//     'opacity': '0.38'
-//   });
-//   $('.no-some').css({
-//     'opacity': '0.38'
-//   });
-//   $('.yes-no').css({
-//     'opacity': '0.38'
-//   });
-//   $('.some-no').css({
-//     'opacity': '0.38'
-//   });
-//   $('.no-no').css({
-//     'opacity': '0.38'
-//   });
-// }
 function someYes() {
-  visibilityByData("coworkers", "Some of them");
-  visibilityByData("supervisor", "Yes");
 
-  $('.yes-yes').css({
-    'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.9'
-  });
-  $('.no-yes').css({
-    'opacity': '0.38'
-  });
-  $('.yes-some').css({
-    'opacity': '0.38'
-  });
-  $('.some-some').css({
-    'opacity': '0.38'
-  });
-  $('.no-some').css({
-    'opacity': '0.38'
-  });
-  $('.yes-no').css({
-    'opacity': '0.38'
-  });
-  $('.some-no').css({
-    'opacity': '0.38'
-  });
-  $('.no-no').css({
-    'opacity': '0.38'
-  });
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "Some of them";
+    selectedProps.supervisor = "Yes";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.38'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
 }
 function noYes() {
-  visibilityByData("coworkers", "No");
-  visibilityByData("supervisor", "Yes");
 
-  $('.yes-yes').css({
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "No";
+    selectedProps.supervisor = "Yes";
+
+    visibilityByData();
+
+    $('.yes-yes').css({
     'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.38'
-  });
-  $('.no-yes').css({
-    'opacity': '0.9'
-  });
-  $('.yes-some').css({
-    'opacity': '0.38'
-  });
-  $('.some-some').css({
-    'opacity': '0.38'
-  });
-  $('.no-some').css({
-    'opacity': '0.38'
-  });
-  $('.yes-no').css({
-    'opacity': '0.38'
-  });
-  $('.some-no').css({
-    'opacity': '0.38'
-  });
-  $('.no-no').css({
-    'opacity': '0.38'
-  });
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity' : '0.9'
+    })
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
 }
 function yesSome() {
-  visibilityByData("coworkers", "Yes");
-  visibilityByData("supervisor", "Some of them");
 
-  $('.yes-yes').css({
-    'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.38'
-  });
-  $('.no-yes').css({
-    'opacity': '0.38'
-  });
-  $('.yes-some').css({
-    'opacity': '0.9'
-  });
-  $('.some-some').css({
-    'opacity': '0.38'
-  });
-  $('.no-some').css({
-    'opacity': '0.38'
-  });
-  $('.yes-no').css({
-    'opacity': '0.38'
-  });
-  $('.some-no').css({
-    'opacity': '0.38'
-  });
-  $('.no-no').css({
-    'opacity': '0.38'
-  });
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No' ) {
+
+    selectedProps.coworkers = "Yes";
+    selectedProps.supervisor = "Some of them";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.38'
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
 }
 function someSome() {
-  visibilityByData("coworkers", "Some of them");
-  visibilityByData("supervisor", "Some of them");
+
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "Some of them";
+    selectedProps.supervisor = "Some of them";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.38'
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
+  selectedProps.coworkers = "Some of them";
+  selectedProps.supervisor = "Some of them";
 
   $('.yes-yes').css({
     'opacity': '0.38'
@@ -585,130 +913,274 @@ function someSome() {
   });
 }
 function noSome() {
-  visibilityByData("coworkers", "No");
-  visibilityByData("supervisor", "Some of them");
 
-  $('.yes-yes').css({
-    'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.38'
-  });
-  $('.no-yes').css({
-    'opacity': '0.38'
-  });
-  $('.yes-some').css({
-    'opacity': '0.38'
-  });
-  $('.some-some').css({
-    'opacity': '0.38'
-  });
-  $('.no-some').css({
-    'opacity': '0.9'
-  });
-  $('.yes-no').css({
-    'opacity': '0.38'
-  });
-  $('.some-no').css({
-    'opacity': '0.38'
-  });
-  $('.no-no').css({
-    'opacity': '0.38'
-  });
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "No";
+    selectedProps.supervisor = "Some of them";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.38'
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
 }
 function yesNo() {
-  visibilityByData("coworkers", "Yes");
-  visibilityByData("supervisor", "No");
 
-  $('.yes-yes').css({
-    'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.38'
-  });
-  $('.no-yes').css({
-    'opacity': '0.38'
-  });
-  $('.yes-some').css({
-    'opacity': '0.38'
-  });
-  $('.some-some').css({
-    'opacity': '0.38'
-  });
-  $('.no-some').css({
-    'opacity': '0.38'
-  });
-  $('.yes-no').css({
-    'opacity': '0.9'
-  });
-  $('.some-no').css({
-    'opacity': '0.38'
-  });
-  $('.no-no').css({
-    'opacity': '0.38'
-  });
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "Yes";
+    selectedProps.supervisor = "No";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.38'
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
 }
 function someNo() {
-  visibilityByData("coworkers", "Some of them");
-  visibilityByData("supervisor", "No");
 
-  $('.yes-yes').css({
-    'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.38'
-  });
-  $('.no-yes').css({
-    'opacity': '0.38'
-  });
-  $('.yes-some').css({
-    'opacity': '0.38'
-  });
-  $('.some-some').css({
-    'opacity': '0.38'
-  });
-  $('.no-some').css({
-    'opacity': '0.38'
-  });
-  $('.yes-no').css({
-    'opacity': '0.38'
-  });
-  $('.some-no').css({
-    'opacity': '0.9'
-  });
-  $('.no-no').css({
-    'opacity': '0.38'
-  });
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "Some of them";
+    selectedProps.supervisor = "No";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.38'
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.38'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+  }
 }
 function noNo() {
-  visibilityByData("coworkers", "No");
-  visibilityByData("supervisor", "No");
 
-  $('.yes-yes').css({
-    'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.38'
-  });
-  $('.no-yes').css({
-    'opacity': '0.38'
-  });
-  $('.yes-some').css({
-    'opacity': '0.38'
-  });
-  $('.some-some').css({
-    'opacity': '0.38'
-  });
-  $('.no-some').css({
-    'opacity': '0.38'
-  });
-  $('.yes-no').css({
-    'opacity': '0.38'
-  });
-  $('.some-no').css({
-    'opacity': '0.38'
-  });
-  $('.no-no').css({
-    'opacity': '0.9'
-  });
+  if (selectedProps.coworkers === null && selectedProps.supervisor === null || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Yes' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'No' && selectedProps.supervisor === 'Some of them' || selectedProps.coworkers === 'Yes' && selectedProps.supervisor === 'No' || selectedProps.coworkers === 'Some of them' && selectedProps.supervisor === 'No') {
+
+    selectedProps.coworkers = "No";
+    selectedProps.supervisor = "No";
+
+    visibilityByData();
+  
+    $('.yes-yes').css({
+      'opacity': '0.38'
+    });
+    $('.some-yes').css({
+      'opacity': '0.38'
+    });
+    $('.no-yes').css({
+      'opacity': '0.38'
+    });
+    $('.yes-some').css({
+      'opacity': '0.38'
+    });
+    $('.some-some').css({
+      'opacity': '0.38'
+    });
+    $('.no-some').css({
+      'opacity': '0.38'
+    });
+    $('.yes-no').css({
+      'opacity': '0.38'
+    });
+    $('.some-no').css({
+      'opacity': '0.38'
+    });
+    $('.no-no').css({
+      'opacity': '0.9'
+    });
+
+  } else {
+    selectedProps.coworkers = null;
+    selectedProps.supervisor = null;
+    visibilityByData();
+
+    $('.yes-yes').css({
+      'opacity': '0.9'
+    });
+    $('.some-yes').css({
+      'opacity': '0.9'
+    });
+    $('.no-yes').css({
+      'opacity': '0.9'
+    });
+    $('.yes-some').css({
+      'opacity': '0.9'
+    });
+    $('.some-some').css({
+      'opacity': '0.9'
+    });
+    $('.no-some').css({
+      'opacity': '0.9'
+    });
+    $('.yes-no').css({
+      'opacity': '0.9'
+    });
+    $('.some-no').css({
+      'opacity': '0.9'
+    });
+  }
 }
