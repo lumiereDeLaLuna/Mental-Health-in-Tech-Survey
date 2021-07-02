@@ -1,5 +1,5 @@
 let stageHeight, stageWidth;
-let data, cumulateState, cumulateFamiliybackground, groupeFamilyBackground, groupedByWork, groupedByAge;
+let data;
 let stage;
 
 $(function () {
@@ -19,8 +19,8 @@ function prepareData() {
 
 
   //für Map
-  cumulateState = gmynd.cumulateData(data, "state");
-  cumulateState = gmynd.mergeData(cumulateState, positionData, "state");
+  //cumulateState = gmynd.cumulateData(data, "state");
+  //cumulateState = gmynd.mergeData(cumulateState, positionData, "state");
   //cumulateState = gmynd.deleteProps(cumulateState, "city");
   //console.log(cumulateState)
 
@@ -28,11 +28,14 @@ function prepareData() {
   groupedByWork = gmynd.sortData(data, "-treatment");
   groupedByWork = gmynd.groupData(groupedByWork, "workInterfere");
   console.log(groupedByWork);
+  gmynd.saveData(groupedByWork, 'groupedByWorkNew.json')
 
   //für AnnualRings
-  groupedByAge = gmynd.sortData(data, ["supervisor", "coworkers"])
-  groupedByAge = gmynd.groupData(data, "age");
+  //groupedByAge = gmynd.sortData(data, ["supervisor", "coworkers"]);
+  //groupedByAge = gmynd.sortData(data, "-treatment");
+  //groupedByAge = gmynd.groupData(data, "age");
   //console.log(groupedByAge);
+  //gmynd.saveData(groupedByAge, 'groupedByAgeNew.json')
 
 }
 

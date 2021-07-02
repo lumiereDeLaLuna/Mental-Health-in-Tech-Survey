@@ -8,17 +8,13 @@ let selectedProps = {
   mentalHealthConsequence: null,
 
 };
+let screen = 0;
 
 $(function () {
   stage = $('#stage');
   stageHeight = stage.innerHeight();
   stageWidth = stage.innerWidth();
   createDots();
-  //drawMap();
-  //drawFamilyBackground();
-  //drawAnnualRing(0);
-  //talkAboutView();
-  //interfereView();
   whereView();
 });
 
@@ -133,6 +129,7 @@ function createDots() {
         familyHistory: person.familyHistory,
         treatment: person.treatment,
         workInterfere: person.workInterfere,
+        age: person.age,
 
       });
 
@@ -150,7 +147,16 @@ function onDotHover(event) {
   let person = dot.data();
 
   dot.addClass("hover");
-  $('#hoverLabel').text('Familybackground : ' + person.familyHistory + '  ' + 'Treatment : ' + person.treatment + '  ' + 'Work interfere : ' + person.workInterfere);
+  if (screen === 1) {
+    $('#hoverLineFirst').text('Familybackground : ' + person.familyHistory);
+    $('#hoverLineSecond').text('Treatment : ' + person.treatment);
+    $('#hoverLineThird').text('Work interfere : ' + person.workInterfere);
+  }
+  if (screen === 2) {
+    $('#hoverLineFirst').text("");
+    $('#hoverLineSecond').text('Age : ' + person.age);
+    $('#hoverLineThird').text("");
+  }
 }
 function offDotHover(event) {
   const dot = $(event.target);
@@ -158,7 +164,9 @@ function offDotHover(event) {
   let person = dot.data();
 
   dot.removeClass("hover");
-  $('#hoverLabel').text("");
+  $('#hoverLineFirst').text("");
+  $('#hoverLineSecond').text("");
+  $('#hoverLineThird').text("");
 }
 
 //function, damit die Filter funktionieren
@@ -219,13 +227,16 @@ function drawMap() {
 
     dot.mouseover(() => {
       dot.addClass("hover");
-      $('#hoverLabel').text('State : ' + state.city + '\r \n' + 'Attendees : ' + state.count);
-
+      $('#hoverLineFirst').text('State : ' + state.city);
+      $('#hoverLineSecond').text('Attendees : ' + state.count);
+      $('#hoverLineThird').text("");
     });
 
     dot.mouseout(() => {
       dot.removeClass("hover");
-      $('#hoverLabel').text("");
+      $('#hoverLineFirst').text("");
+      $('#hoverLineSecond').text("");
+      $('#hoverLineThird').text("");
 
     });
 
@@ -279,6 +290,7 @@ function drawAnnualRing() {
 
 //welcher Screen gerade gezeigt wird
 function whereView() {
+  screen = 0;
   drawMap();
   drawPersonMap();
 
@@ -289,10 +301,10 @@ function whereView() {
   mapButton();
 }
 function interfereView() {
-
+  screen = 1;
   drawFamilyBackground();
 
-  $('.country').removeClass('country');
+  $('.country').addClass('invisible');
 
   $('.where').addClass('where-opacity').removeClass('where');
   $('.interfere-opacity').addClass('interfere').removeClass('interfere-opacity');
@@ -302,10 +314,10 @@ function interfereView() {
 
 }
 function talkAboutView() {
-
+  screen = 2;
   drawAnnualRing();
 
-  $('.country').removeClass('country');
+  $('.country').addClass('invisible');
 
   $('.where').addClass('where-opacity').removeClass('where');
   $('.interfere').addClass('interfere-opacity').removeClass('interfere');
@@ -576,39 +588,6 @@ function yesYes() {
       'opacity': '0.9'
     });
   }
-
-  // selectedProps.coworkers = "Yes";
-  // selectedProps.supervisor = "Yes";
-  // console.log(selectedProps);
-  // visibilityByData();
-
-  // $('.yes-yes').css({
-  //   'opacity': '0.38'
-  // });
-  // $('.some-yes').css({
-  //   'opacity': '0.9'
-  // });
-  // $('.no-yes').css({
-  //   'opacity': '0.38'
-  // });
-  // $('.yes-some').css({
-  //   'opacity': '0.38'
-  // });
-  // $('.some-some').css({
-  //   'opacity': '0.38'
-  // });
-  // $('.no-some').css({
-  //   'opacity': '0.38'
-  // });
-  // $('.yes-no').css({
-  //   'opacity': '0.38'
-  // });
-  // $('.some-no').css({
-  //   'opacity': '0.38'
-  // });
-  // $('.no-no').css({
-  //   'opacity': '0.38'
-  // });
 }
 function someYes() {
 
