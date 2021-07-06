@@ -815,7 +815,7 @@ function someSome() {
       'opacity': '0.38'
     });
     $('.some-some').css({
-      'opacity': '0.38'
+      'opacity': '0.9'
     });
     $('.no-some').css({
       'opacity': '0.38'
@@ -860,36 +860,6 @@ function someSome() {
       'opacity': '0.9'
     });
   }
-  selectedProps.coworkers = "Some of them";
-  selectedProps.supervisor = "Some of them";
-
-  $('.yes-yes').css({
-    'opacity': '0.38'
-  });
-  $('.some-yes').css({
-    'opacity': '0.38'
-  });
-  $('.no-yes').css({
-    'opacity': '0.38'
-  });
-  $('.yes-some').css({
-    'opacity': '0.38'
-  });
-  $('.some-some').css({
-    'opacity': '0.9'
-  });
-  $('.no-some').css({
-    'opacity': '0.38'
-  });
-  $('.yes-no').css({
-    'opacity': '0.38'
-  });
-  $('.some-no').css({
-    'opacity': '0.38'
-  });
-  $('.no-no').css({
-    'opacity': '0.38'
-  });
 }
 function noSome() {
 
